@@ -1,0 +1,12 @@
+{
+  "name": "observatory",
+  "version": "0.0.1",
+  "description": "Bootstrap playground",
+  "main": "index.js",
+  "repository": "https://github.com/walaxy/observatory.git",
+  "author": "Reza Ardestani <reza@walaxy.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
