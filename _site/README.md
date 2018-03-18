@@ -1,2 +1,0 @@
-# observatory
-Bootstrap playground
