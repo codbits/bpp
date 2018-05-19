@@ -1,0 +1,24 @@
+.obs-cta-1 {
+  padding: 8rem 0;
+  background-color: #fff;
+}
+
+.obs-cta-1 .shapes {
+  width: 3rem;
+  margin-bottom: .5rem;
+}
+
+.obs-cta-1 .title {
+  font-size: 2rem;
+}
+
+.obs-cta-1 .subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.obs-cta-1 .text {
+  font-size: 80%;
+  color: #adb5bd;
+}
