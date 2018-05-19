@@ -1,0 +1,32 @@
+doctype html
+html
+  -
+    var socialAccount = {
+      common: 'WordPress',
+      github: 'WordPress/WordPress'
+    }
+  -
+    var cdn = {
+      bootstrap: {
+        css: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0-beta.2/dist/css/bootstrap.min.css',
+        js: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0-beta.2/dist/js/bootstrap.min.js'
+      },
+      jquery: 'https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.slim.min.js',
+      twitter: 'https://platform.twitter.com/widgets.js',
+      github: {
+        buttons: 'https://buttons.github.io/buttons.js'
+      },
+      countUp: 'https://cdn.jsdelivr.net/npm/countup.js@1.9.3/dist/countUp.min.js',
+      iconmonstr: 'https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css',
+      vivus: 'https://cdn.jsdelivr.net/npm/vivus@0.4.3/dist/vivus.min.js',
+      anime: 'https://cdn.jsdelivr.net/npm/animejs@2.2.0/anime.min.js',
+    }
+  block vars
+  head
+    title #{title} - Observatory
+    block stylesheets
+    block scripts
+    block inlineStyle
+  body(class=bodyClass)
+    block content
+    block scriptsFooter

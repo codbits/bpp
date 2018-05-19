@@ -1,0 +1,33 @@
+{
+  "name": "observatory",
+  "version": "1.0.0",
+  "description": "A playground to explore HTML and CSS frameworks",
+  "main": "index.js",
+  "repository": "https://github.com/walaxy/observatory",
+  "author": "Reza Ardestani <reza@walaxy.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap-4.1.1": "npm:bootstrap@4.1.1",
+    "bootstrap-4.1.0": "npm:bootstrap@4.1.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-linter": "^0.5.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-standard": "^10.1.1",
+    "gulp-watch": "^4.3.11",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "standard": {
+    "globals": [
+      "$",
+      "CountUp",
+      "Vivus",
+      "anime"
+    ]
+  }
+}
