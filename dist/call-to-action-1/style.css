@@ -3,22 +3,22 @@
   background-color: #fff;
 }
 
-.obs-cta-1 .shapes {
+.obs-cta-1 .obs-shapes {
   width: 3rem;
   margin-bottom: .5rem;
 }
 
-.obs-cta-1 .title {
+.obs-cta-1 .obs-title {
   font-size: 2rem;
 }
 
-.obs-cta-1 .subtitle {
+.obs-cta-1 .obs-subtitle {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 200;
 }
 
-.obs-cta-1 .text {
+.obs-cta-1 .obs-text {
   font-size: 80%;
   color: #adb5bd;
 }

@@ -27,7 +27,7 @@ gulp.task('serve', [ 'html', 'imgs', 'scss', 'js' ], () => {
 
 gulp.task('html', () => {
   return gulp
-    .src([ '!./src/assets/_layout.pug', './src/**/*.pug' ])
+    .src([ '!./src/_layout.pug', './src/**/*.pug' ])
     .pipe(plumber())
     .pipe(newer('./dist'))
     .pipe(pugLinter())

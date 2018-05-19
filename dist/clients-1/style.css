@@ -1,0 +1,32 @@
+.obs-client-1 {
+  background: #fff;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.obs-client-1 .obs-title {
+  font-weight: 400;
+}
+
+.obs-client-1 .obs-desc {
+  color: #6c757d;
+  margin-bottom: 3rem;
+}
+
+.obs-client-1 .list-inline-item {
+  margin: auto 1rem 1.5rem;
+}
+
+.obs-client-1 .obs-brand {
+  height: 45px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.obs-client-1 .obs-brand:hover, .obs-client-1 .obs-brand:focus {
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
+}

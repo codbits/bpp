@@ -1,21 +1,21 @@
-extend ../assets/_layout.pug
+extend ../_layout.pug
 block vars
   - var id = '1'
   - var slug = 'cta'
   - var title = `Call to Action ${id}`
   - var bodyClass = 'pt-5 bg-primary'
 block append stylesheets
-  link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css')
-  link(rel='stylesheet', type='text/css', href='style.css')
+  link(rel='stylesheet', type='text/css', href=cdn.bootstrap_411.css)
+  link(rel='stylesheet', type='text/css', href='./style.css')
 block content
   section(class=`obs-${slug}-${id}`)
     .container
       .row.align-items-center
         .col-md-6
           include shapes.svg
-          h3.title Not ready yet, hmmm?
-          h4.subtitle Try App free for 14 days.
-          p.text All accounts &middot; Try full features for 14 days &middot; No credit card required
+          h3.obs-title Not ready yet, hmmm?
+          h4.obs-subtitle Try App free for 14 days.
+          p.obs-text All accounts &middot; Try full features for 14 days &middot; No credit card required
         .col-md-6.col-lg-5.offset-lg-1
           form
             .form-group
