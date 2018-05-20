@@ -9,6 +9,7 @@ var plumber = require('gulp-plumber');
 // var gulpIf = require('gulp-if')
 var watch = require('gulp-watch');
 var standard = require('gulp-standard');
+var htmltidy = require('gulp-htmltidy');
 
 gulp.task('default', [ 'serve' ]);
 
@@ -32,11 +33,10 @@ gulp.task('html', () => {
     .pipe(newer('./dist'))
     .pipe(pugLinter())
     .pipe(pugLinter.reporter())
-    .pipe(
-      pug({
-        pretty: true
-      })
-    )
+    .pipe(pug())
+    .pipe(htmltidy({
+      indent: true
+    }))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
 });

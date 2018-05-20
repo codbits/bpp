@@ -1886,6 +1886,14 @@ gulp-autoprefixer@^4.0.0:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
+gulp-htmltidy@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/gulp-htmltidy/-/gulp-htmltidy-0.2.4.tgz#f5ca201791c84ce1ed5f5cc185b93ec1df751b6a"
+  dependencies:
+    htmltidy2 "*"
+    plugin-error "^1.0.1"
+    through2 "^2.0.3"
+
 gulp-if@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/gulp-if/-/gulp-if-2.0.2.tgz#a497b7e7573005041caa2bc8b7dda3c80444d629"
@@ -2140,6 +2148,10 @@ homedir-polyfill@^1.0.1:
 hosted-git-info@^2.1.4:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.6.0.tgz#23235b29ab230c576aab0d4f13fc046b0b038222"
+
+htmltidy2@*:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/htmltidy2/-/htmltidy2-0.3.0.tgz#1edfb74b8cd530cdcdc29ef547c849a651f0870b"
 
 http-errors@1.6.3, http-errors@~1.6.2:
   version "1.6.3"
@@ -3534,7 +3546,7 @@ plugin-error@^0.1.2:
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
 
-plugin-error@^1.0.0:
+plugin-error@^1.0.0, plugin-error@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
   dependencies:
