@@ -1,0 +1,48 @@
+extend ../_layout.pug
+block vars
+  - var id = 1
+  - var slug = 'pricing'
+  - var title = `Pricing ${id}`
+  - var bodyClass = 'mt-5 mb-5'
+block append stylesheets
+  link(rel='stylesheet', type='text/css', href=cdn.bootstrap_411.css)
+  link(rel='stylesheet', type='text/css', href=cdn.iconmonstr)
+  link(rel='stylesheet', type='text/css', href='./style.css')
+block content
+  section(class=`obs-${slug}-${id}`)
+    .container.text-center
+      h2.obs-title Pricing
+      p.obs-desc
+        | No credit card required. Premium plan includes a 14-day free trial.
+        br
+        | Never worry again about tracking too many events.
+      .row
+        .col-md-6
+          ul.list-group.obs-plan
+            li.list-group-item
+              i.obs-plan-icon.im.im-cube
+              h4.obs-plan-name Basic
+              p.obs-plan-desc Powerful insights for growing teams.
+              h3.obs-plan-cost Free
+              a.obs-plan-btn.btn.btn-primary(href="#") Get Started
+            li.list-group-item 5,000 Sessions per Month
+            li.list-group-item Email Support
+            li.list-group-item 3 Month Data Retention
+        .col-md-6
+          ul.list-group.obs-plan
+            li.list-group-item
+              i.obs-plan-icon.im.im-cubes
+              h4.obs-plan-name Premium
+              p.obs-plan-desc Analytics infrastructure for your company.
+              h3.obs-plan-cost Custom pricing
+              a.obs-plan-btn.btn.btn-primary(href="#") Contact us
+            li.list-group-item Every Analysis Feature
+            li.list-group-item Millions of Sessions per Month
+            li.list-group-item On-Site Support
+            li.list-group-item Heap SQL
+            li.list-group-item Single Sign-On
+            li.list-group-item Data Science Consultant
+            li.list-group-item Custom Data Retention
+            li.list-group-item Service-Level Agreements
+            li.list-group-item Invoice Billing
+            li.list-group-item Custom Terms
