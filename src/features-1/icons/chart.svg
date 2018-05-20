@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Chart</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M10 2v60h44V18L38 2H10z"
+  stroke-linejoin="miter" stroke-linecap="round"></path>
+  <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10"
+  stroke-width="2" d="M38 2v16h16" stroke-linejoin="miter" stroke-linecap="round"></path>
+  <path data-name="layer1" d="M44.8 36.9A12.9 12.9 0 1 1 31.9 24H33"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" d="M33 36.9h14a15.1 15.1 0 0 0-14-15z"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"
+  stroke-linecap="round"></path>
+</svg>

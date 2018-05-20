@@ -1,0 +1,36 @@
+.obs-feature-1 {
+  background-color: #fff;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: #070707;
+}
+
+.obs-feature-1 .obs-block-title {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.obs-feature-1 .obs-feature {
+  margin-bottom: 5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.obs-feature-1 .obs-icon {
+  margin: 0 auto;
+  width: 100px;
+  min-height: 150px;
+}
+
+.obs-feature-1 .obs-title {
+  font-size: 1.5rem;
+}
+
+.obs-feature-1 .obs-desc {
+  margin-top: 1.3rem;
+  color: #212121;
+  line-height: 1.8;
+}
