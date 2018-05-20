@@ -1,0 +1,18 @@
+.obs-footer-1 {
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.obs-footer-1 .obs-title {
+  margin-bottom: 1rem;
+}
+
+.obs-footer-1 li {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+.obs-footer-1 a {
+  color: #007bff;
+}
