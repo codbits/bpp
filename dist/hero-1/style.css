@@ -1,0 +1,65 @@
+.obs-hero-1 {
+  height: 100vh;
+  background: #14080E url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.obs-hero-1 .obs-title {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .obs-hero-1 .obs-title {
+    font-size: 2rem;
+  }
+}
+
+.obs-hero-1 .obs-desc {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.obs-hero-1 .form-group,
+.obs-hero-1 .form-control {
+  width: 100%;
+}
+
+.obs-hero-1 .form-control,
+.obs-hero-1 .btn {
+  border-radius: 5rem;
+}
+
+.obs-hero-1 .form-control {
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+}
+
+.obs-hero-1 .btn {
+  padding: .6rem 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .obs-hero-1 .btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .obs-hero-1 .btn {
+    position: absolute;
+    right: 18px;
+  }
+}
+
+.obs-hero-1 .obs-icon {
+  width: 1rem;
+  vertical-align: bottom;
+  margin-right: .5rem;
+  fill: #fff;
+}

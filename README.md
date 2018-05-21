@@ -6,6 +6,7 @@ A playground to explore HTML and CSS frameworks.
 * Clients [1](https://walaxy.github.io/observatory/dist/clients-1/)
 * Features [1](https://walaxy.github.io/observatory/dist/features-1/)
 * Footer [1](https://walaxy.github.io/observatory/dist/footer-1/)
+* Hero [1](https://walaxy.github.io/observatory/dist/hero-1/)
 * Pricing [1](https://walaxy.github.io/observatory/dist/pricing-1/)
 
 ## Roadmap

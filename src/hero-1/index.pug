@@ -1,0 +1,24 @@
+extend ../_layout.pug
+block vars
+  - var id = 1
+  - var slug = 'hero'
+  - var title = `Hero ${id}`
+block append stylesheets
+  link(rel='stylesheet', type='text/css', href=cdn.bootstrap_411.css)
+  link(rel='stylesheet', type='text/css', href='style.css')
+block append scripts
+  script(async='', defer='', src=cdn.github.buttons)
+  script(async='', defer='', src=cdn.twitter, charset='utf-8')
+block content
+  section(class=`obs-${slug}-${id} d-flex align-items-center`)
+    .container
+      .row
+        .col-sm-12.col-md-8.col-lg-6
+          h1.obs-title Master VUE.JS
+          p.obs-desc Energistically deploy next-generation convergence before economically sound expertise. Collaboratively deliver effective systems through vertical architectures.
+          form.form-inline
+            .form-group
+              input(type='email' class='form-control form-control-lg' placeholder='Your email address...')
+              button(type='submit' class='btn btn-primary')
+                <svg class="obs-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
+                | Start learning
