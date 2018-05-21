@@ -9,9 +9,9 @@ A playground to explore HTML and CSS frameworks.
 * Pricing [1](https://walaxy.github.io/observatory/dist/pricing-1/)
 
 ## Roadmap
-* https://github.com/walaxy/observatory/milestone/1
-* https://github.com/walaxy/observatory/milestone/2
-* https://github.com/walaxy/observatory/milestone/3
+* (10 Templates)[https://github.com/walaxy/observatory/milestone/1]
+* (50 Templates)[https://github.com/walaxy/observatory/milestone/2]
+* (100 Templates)[https://github.com/walaxy/observatory/milestone/3]
 
 ## Developers
 Soon...
