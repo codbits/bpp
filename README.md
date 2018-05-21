@@ -8,6 +8,11 @@ A playground to explore HTML and CSS frameworks.
 * Footer [1](https://walaxy.github.io/observatory/dist/footer-1/)
 * Pricing [1](https://walaxy.github.io/observatory/dist/pricing-1/)
 
+## Roadmap
+* https://github.com/walaxy/observatory/milestone/1
+* https://github.com/walaxy/observatory/milestone/2
+* https://github.com/walaxy/observatory/milestone/3
+
 ## Developers
 Soon...
 
