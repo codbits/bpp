@@ -9,7 +9,7 @@ var plumber = require('gulp-plumber');
 // var gulpIf = require('gulp-if')
 var watch = require('gulp-watch');
 var standard = require('gulp-standard');
-var htmltidy = require('gulp-htmltidy');
+var $ = require('gulp-load-plugins')();
 
 gulp.task('default', [ 'serve' ]);
 
@@ -21,7 +21,7 @@ gulp.task('serve', [ 'html', 'imgs', 'scss', 'js' ], () => {
   });
 
   gulp.watch('./src/**/*.pug', [ 'html' ]);
-  // gulp.watch('./src/assets/imgs/**/*', [ 'imgs' ]);
+  gulp.watch('./src/**/*.{png,gif,jpg,svg}', [ 'imgs' ]);
   gulp.watch('./src/**/*.scss', [ 'scss' ]);
   gulp.watch('./src/**/*.js', [ 'js' ]);
 });
@@ -34,8 +34,8 @@ gulp.task('html', () => {
     .pipe(pugLinter())
     .pipe(pugLinter.reporter())
     .pipe(pug())
-    .pipe(htmltidy({
-      indent: true
+    .pipe($.htmlPrettify({
+      indent_size: 2
     }))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
@@ -43,10 +43,8 @@ gulp.task('html', () => {
 
 gulp.task('imgs', () => {
   return gulp
-    .src('./src/assets/imgs/**/*')
-    .pipe(plumber())
-    .pipe(newer('./dist/assets/imgs/**/*'))
-    .pipe(gulp.dest('./dist/assets/imgs'))
+    .src('./src/**/*.{png,gif,jpg,svg}')
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
   });
 
