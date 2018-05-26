@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Accept</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter"
+  stroke-width="2" d="M2 6h60v12H2zm0 12v40h60V18"></path>
+  <circle data-name="layer2" cx="8" cy="12" r="1" fill="none" stroke="#000000"
+  stroke-linecap="round" stroke-linejoin="miter" stroke-width="2"></circle>
+  <circle data-name="layer2" cx="15" cy="12" r="1" fill="none"
+  stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="2"></circle>
+  <circle data-name="layer2" cx="22" cy="12" r="1" fill="none"
+  stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="2"></circle>
+  <path data-name="layer1" d="M42 30L28 44l-7-7" fill="none" stroke="#000000"
+  stroke-linecap="round" stroke-linejoin="miter" stroke-width="2"></path>
+</svg>

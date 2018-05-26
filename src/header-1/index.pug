@@ -1,0 +1,112 @@
+extend ../_layout.pug
+block vars
+  - var id = 1
+  - var slug = 'header'
+  - var title = `Header ${id}`
+block append stylesheets
+  link(rel='stylesheet', type='text/css', href=cdn.bootstrap_411.css)
+  link(rel='stylesheet', type='text/css', href='style.css')
+block append scripts
+  script(src=cdn.jquery)
+  script(src=cdn.bootstrap_411.js)
+  script(src='https://cdn.jsdelivr.net/npm/tiny-throttle@1.0.1/dist/tiny-throttle.umd.js')
+  script(src='script.js')
+block content
+  header(class=`obs-${slug}-${id}`)
+    nav(class=`obs-navbar-${id} navbar navbar-expand-lg obs-navbar-dark fixed-top`)
+      .container
+
+        #navbarLeft.collapse.navbar-collapse.obs-nav-left
+          ul.navbar-nav
+            li.nav-item.dropdown
+              a#navbarDropOne.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Softwares
+              .dropdown-menu.obs-dropdown-menu(aria-labelledby='navbarDropOne')
+                a.dropdown-item(href='#') Software 1
+                a.dropdown-item(href='#') Software 2
+                .dropdown-divider
+                a.media(href="#")
+                  img.obs-img(src='http://placehold.it/60x60', alt='Generic placeholder image')
+                  .media-body
+                    p.obs-title Gamodev
+                    p.obs-text Progressively customize low-risk high-yield communities and goal-oriented content.
+
+            li.nav-item.dropdown
+              a#navbarDropTwo.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Games
+              .dropdown-menu.obs-dropdown-menu(aria-labelledby='navbarDropTwo')
+                a.media(href="#")
+                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  .media-body
+                    p.obs-title Game 1
+                    p.obs-text Assertively envision vertical.
+                .dropdown-divider
+                a.media(href="#")
+                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  .media-body
+                    p.obs-title Game 2
+                    p.obs-text Energistically reinvent.
+                .dropdown-divider
+                a.media(href="#")
+                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  .media-body
+                    p.obs-title Game 3
+                    p.obs-text Holisticly incentivize impact.
+                .dropdown-divider
+
+            li.nav-item.dropdown
+              a#navbarDropThree.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Shop
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Product 1
+                a.dropdown-item(href='#') Product 2
+                .dropdown-divider
+                a.dropdown-item(href='#') Check more &rarr;
+
+        a.navbar-brand(href='#')
+          img.brand(src='./brand.svg', alt='Gamodev')
+          img.brand-alt(src='./brand-alt.svg', alt='Gamodev')
+
+        #navbarRight.collapse.navbar-collapse.obs-nav-right
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#') Knowledge base
+            li.nav-item
+              a.nav-link(href='#') Login
+            li.nav-item
+              a.btn(href='#') Join for FREE
+
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+
+  section.pt-5.bg-light
+    .container
+      p Globally reconceptualize interoperable methods of empowerment via professional communities. Enthusiastically customize 2.0 strategic theme areas for front-end opportunities. Uniquely whiteboard go forward total linkage and unique processes. Efficiently aggregate granular convergence via interdependent content. Compellingly expedite stand-alone experiences before superior architectures.
+
+      p Progressively implement sticky ideas via go forward schemas. Energistically architect global action items rather than plug-and-play models. Continually streamline one-to-one users through maintainable data. Globally reconceptualize ethical e-tailers before empowered solutions. Interactively procrastinate progressive value with proactive manufactured products.
+
+      p Monotonectally evolve next-generation processes via web-enabled products. Progressively seize goal-oriented e-commerce and flexible benefits. Compellingly transform e-business ROI and dynamic total linkage. Energistically conceptualize virtual.
+
+      p Uniquely strategize resource-leveling e-tailers rather than customer directed alignments. Distinctively expedite visionary methodologies after user-centric quality vectors. Synergistically mesh user friendly meta-services after robust scenarios. Rapidiously expedite quality meta-services whereas maintainable relationships. Assertively revolutionize efficient opportunities before holistic benefits.
+
+      p Competently repurpose just in time sources whereas prospective best practices. Competently e-enable multidisciplinary e-business without timely opportunities. Collaboratively leverage other's collaborative quality vectors before future-proof expertise. Synergistically fashion business architectures and resource-leveling quality vectors. Distinctively negotiate resource-leveling outsourcing vis-a-vis goal-oriented alignments.
+
+      p Rapidiously embrace high standards in process improvements rather than efficient mindshare. Collaboratively conceptualize compelling relationships rather than economically sound metrics. Interactively whiteboard holistic value before front-end ROI. Enthusiastically exploit vertical human capital without high-quality customer service. Dramatically matrix synergistic scenarios with interactive architectures.
+
+      p Collaboratively foster goal-oriented niches rather than resource sucking portals. Holisticly leverage other's scalable innovation with premier methodologies. Objectively embrace reliable channels rather than synergistic "outside the box" thinking. Dramatically evisculate alternative ideas before technically sound catalysts for change. Professionally harness fully tested intellectual capital rather than real-time applications.
+
+      p Collaboratively redefine flexible scenarios whereas top-line deliverables. Professionally monetize ubiquitous paradigms for e-business e-tailers. Rapidiously communicate intuitive data before B2C materials. Distinctively orchestrate cutting-edge alignments after standardized ideas. Professionally provide access to granular catalysts for change for distributed innovation.
+
+      p Monotonectally leverage other's parallel metrics vis-a-vis enabled synergy. Appropriately simplify intermandated e-commerce through effective collaboration and idea-sharing. Compellingly embrace cross functional supply chains after visionary information. Continually streamline visionary methods of empowerment after parallel communities.
+
+      p Uniquely strategize resource-leveling e-tailers rather than customer directed alignments. Distinctively expedite visionary methodologies after user-centric quality vectors. Synergistically mesh user friendly meta-services after robust scenarios. Rapidiously expedite quality meta-services whereas maintainable relationships. Assertively revolutionize efficient opportunities before holistic benefits.
+
+      p Competently repurpose just in time sources whereas prospective best practices. Competently e-enable multidisciplinary e-business without timely opportunities. Collaboratively leverage other's collaborative quality vectors before future-proof expertise. Synergistically fashion business architectures and resource-leveling quality vectors. Distinctively negotiate resource-leveling outsourcing vis-a-vis goal-oriented alignments.
+
+      p Rapidiously embrace high standards in process improvements rather than efficient mindshare. Collaboratively conceptualize compelling relationships rather than economically sound metrics. Interactively whiteboard holistic value before front-end ROI. Enthusiastically exploit vertical human capital without high-quality customer service. Dramatically matrix synergistic scenarios with interactive architectures.
+
+      p Collaboratively foster goal-oriented niches rather than resource sucking portals. Holisticly leverage other's scalable innovation with premier methodologies. Objectively embrace reliable channels rather than synergistic "outside the box" thinking. Dramatically evisculate alternative ideas before technically sound catalysts for change. Professionally harness fully tested intellectual capital rather than real-time applications.
+
+      p Collaboratively redefine flexible scenarios whereas top-line deliverables. Professionally monetize ubiquitous paradigms for e-business e-tailers. Rapidiously communicate intuitive data before B2C materials. Distinctively orchestrate cutting-edge alignments after standardized ideas. Professionally provide access to granular catalysts for change for distributed innovation.
+
+      p Monotonectally leverage other's parallel metrics vis-a-vis enabled synergy. Appropriately simplify intermandated e-commerce through effective collaboration and idea-sharing. Compellingly embrace cross functional supply chains after visionary information. Continually streamline visionary methods of empowerment after parallel communities.
