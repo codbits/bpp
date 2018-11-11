@@ -1,5 +1,5 @@
-# bootstrap-plus-plus
-A playground to explore HTML and CSS frameworks.
+# Bootstrap++
+Next-level free Bootstrap block templates.
 
 ## Templates
 * Call to action [1](https://codbits.github.io/bootstrap-plus-plus/dist/call-to-action-1/)
@@ -10,13 +10,5 @@ A playground to explore HTML and CSS frameworks.
 * Hero [1](https://codbits.github.io/bootstrap-plus-plus/dist/hero-1/)
 * Pricing [1](https://codbits.github.io/bootstrap-plus-plus/dist/pricing-1/)
 
-## Roadmap
-* [10 Templates](https://github.com/codbits/bootstrap-plus-plus/milestone/1)
-* [50 Templates](https://github.com/codbits/bootstrap-plus-plus/milestone/2)
-* [100 Templates](https://github.com/codbits/bootstrap-plus-plus/milestone/3)
-
-## Developers
-Soon...
-
 ## License 
-Copyright [codbits](//codbits.io) under the [MIT license](LICENSE.md).
+Copyright [CodBits](//CodBits.com) under the [MIT license](LICENSE.md).
