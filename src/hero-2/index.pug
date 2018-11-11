@@ -1,0 +1,40 @@
+extend ../_layout.pug
+block vars
+  - var id = 2
+  - var slug = 'hero'
+  - var title = `Hero ${id}`
+block append stylesheets
+  link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto')
+  link(rel='stylesheet', type='text/css', href=cdn.bootstrap_4.css)
+  link(rel='stylesheet', type='text/css', href=cdn.iconmonstr)
+  link(rel='stylesheet', type='text/css', href='style.css')
+block content
+  section(class=`bpp-${slug}-${id}`)
+    .container
+      .row
+        .col-sm-12.col-lg-6
+          div.bpp-divider
+          h1.bpp-title We're a creative studio
+          button.btn.bpp-btn Get Started
+      .row
+        .col-md-6.col-lg-4
+          .card
+            .card-body
+              i.bpp-icon.im.im-award
+              .card-title Award Winning
+              p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+        .col-md-6.col-lg-4
+          .card
+            .card-body
+              i.bpp-icon.im.im-fingerprint
+              .card-title Secure
+              p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+        .col-md-6.col-lg-4
+          .card
+            .card-body
+              i.bpp-icon.im.im-support
+              .card-title Instant Support
+              p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+
+
+

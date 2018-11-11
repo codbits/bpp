@@ -1,0 +1,81 @@
+body {
+  background-color: #020202;
+}
+
+.bpp-hero-2 {
+  font-family: 'Roboto', sans-serif;
+  height: 800px;
+  background: #020202 url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.bpp-hero-2 .container {
+  padding-top: 20vh;
+}
+
+.bpp-hero-2 .bpp-divider {
+  margin-bottom: 2rem;
+  height: 2px;
+  width: 100px;
+  background-color: #fb2d2d;
+}
+
+.bpp-hero-2 .bpp-title {
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+
+.bpp-hero-2 .bpp-btn {
+  padding: 0.7rem 2rem;
+  margin-top: 2rem;
+  background-color: #fb2d2d;
+  border: 2px solid #fb2d2d;
+  color: white;
+  font-weight: bold;
+}
+
+.bpp-hero-2 .row:nth-child(2) {
+  margin-top: 20vh;
+}
+
+.bpp-hero-2 .card {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  top: 0;
+  background-color: #1c1c1c;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .bpp-hero-2 .card {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.bpp-hero-2 .card:hover {
+  top: -1rem;
+  background-color: #fb2d2d;
+}
+
+.bpp-hero-2 .card:hover .bpp-icon,
+.bpp-hero-2 .card:hover .card-text {
+  color: white;
+}
+
+.bpp-hero-2 .bpp-icon {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #999999;
+}
+
+.bpp-hero-2 .card-title {
+  font-size: 1.5rem;
+}
+
+.bpp-hero-2 .card-text {
+  color: #999999;
+}
