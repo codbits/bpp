@@ -1,4 +1,4 @@
-.obs-pricing-1 {
+.bpp-pricing-1 {
   background: #7f00ff;
   background: -webkit-gradient(linear, left bottom, left top, from(#e100ff), to(#7f00ff));
   background: linear-gradient(to top, #e100ff, #7f00ff);
@@ -7,60 +7,60 @@
   color: #fff;
 }
 
-.obs-pricing-1 .container {
+.bpp-pricing-1 .container {
   max-width: 55rem;
 }
 
-.obs-pricing-1 .obs-title {
+.bpp-pricing-1 .bpp-title {
   font-weight: 400;
   line-height: 1.9;
   font-size: 2.5rem;
 }
 
-.obs-pricing-1 .obs-desc {
+.bpp-pricing-1 .bpp-desc {
   color: #ced4da;
   margin-bottom: 3rem;
 }
 
-.obs-pricing-1 .obs-plan {
+.bpp-pricing-1 .bpp-plan {
   margin-bottom: 1.5rem;
   color: #000;
   border-radius: 0.3rem;
   border: 0.5rem solid #ffffff36;
 }
 
-.obs-pricing-1 .obs-plan .list-group-item {
+.bpp-pricing-1 .bpp-plan .list-group-item {
   border-radius: 0;
   border-right-width: 0;
   border-left-width: 0;
 }
 
-.obs-pricing-1 .obs-plan .list-group-item:first-child {
+.bpp-pricing-1 .bpp-plan .list-group-item:first-child {
   border-top-width: 0;
 }
 
-.obs-pricing-1 .obs-plan .list-group-item:last-child {
+.bpp-pricing-1 .bpp-plan .list-group-item:last-child {
   border-bottom-width: 0;
 }
 
-.obs-pricing-1 .obs-plan-icon {
+.bpp-pricing-1 .bpp-plan-icon {
   display: block;
   margin: 2rem 0 1rem;
   font-size: 4.5rem;
 }
 
-.obs-pricing-1 .obs-plan-desc {
+.bpp-pricing-1 .bpp-plan-desc {
   color: #6c757d;
 }
 
-.obs-pricing-1 .obs-plan-cost {
+.bpp-pricing-1 .bpp-plan-cost {
   margin-bottom: 1.1rem;
   text-transform: uppercase;
   line-height: 1.8;
   font-size: 1.75rem;
 }
 
-.obs-pricing-1 .obs-plan-btn {
+.bpp-pricing-1 .bpp-plan-btn {
   margin-bottom: 1rem;
   padding: 0.7rem 2rem;
   background: #bc4e9c;
@@ -70,6 +70,6 @@
   text-transform: uppercase;
 }
 
-.obs-pricing-1 .obs-plan-btn:hover, .obs-pricing-1 .obs-plan-btn:focus, .obs-pricing-1 .obs-plan-btn:active {
+.bpp-pricing-1 .bpp-plan-btn:hover, .bpp-pricing-1 .bpp-plan-btn:focus, .bpp-pricing-1 .bpp-plan-btn:active {
   background: #e100ff;
 }

@@ -1,20 +1,20 @@
 /* eslint-disable */
 $(function () {
-  var navbar = $('.obs-header-1 .navbar')
+  var navbar = $('.bpp-header-1 .navbar')
 
   function switchClass() {
     var offset = $(window).scrollTop()
 
     if (offset > 340) {
-      if (navbar.hasClass('obs-navbar-light')) {
+      if (navbar.hasClass('bpp-navbar-light')) {
         return
       }
-      navbar.toggleClass('obs-navbar-light obs-navbar-dark')
+      navbar.toggleClass('bpp-navbar-light bpp-navbar-dark')
     } else {
-      if (navbar.hasClass('obs-navbar-dark')) {
+      if (navbar.hasClass('bpp-navbar-dark')) {
         return
       }
-      navbar.toggleClass('obs-navbar-dark obs-navbar-light')
+      navbar.toggleClass('bpp-navbar-dark bpp-navbar-light')
     }
   }
 

@@ -2,7 +2,7 @@
 @import "../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.obs-header-1 {
+.bpp-header-1 {
   height: 400px;
   background-color: $primary;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.obs-navbar-1 {
+.bpp-navbar-1 {
   .brand-alt {
     width: 0;
     transform: scale(0);
@@ -31,7 +31,7 @@
     }
   }
 
-  .obs-nav-left .nav-link {
+  .bpp-nav-left .nav-link {
     font-weight: bold;
   }
 
@@ -49,7 +49,7 @@
 }
 
 // Light
-.obs-navbar-light {
+.bpp-navbar-light {
   background-color: $white;
   border-bottom: 1px solid $gray-300;
 
@@ -69,14 +69,14 @@
 }
 
 // Dark
-.obs-navbar-dark {
+.bpp-navbar-dark {
   .brand {
     transform: scale(1);
     transition: transform .3s;
   }
 
   // Nav right
-  .obs-nav-right {
+  .bpp-nav-right {
     .nav-link {
       color: $gray-300;
     }
@@ -114,7 +114,7 @@
   margin-bottom: 0;
 }
 
-.obs-dropdown-menu {
+.bpp-dropdown-menu {
   padding-bottom: 0;
 
   .media {
@@ -126,15 +126,15 @@
     }
   }
 
-  .obs-img {
+  .bpp-img {
     margin-right: $spacer;
   }
 
-  .obs-title {
+  .bpp-title {
     margin-bottom: 0;
   }
 
-  .obs-text {
+  .bpp-text {
     color: $gray-600;
     font-size: $font-size-sm;
   }
