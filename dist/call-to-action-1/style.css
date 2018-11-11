@@ -1,24 +1,24 @@
-.obs-cta-1 {
+.bpp-cta-1 {
   padding: 8rem 0;
   background-color: #fff;
 }
 
-.obs-cta-1 .obs-shapes {
+.bpp-cta-1 .bpp-shapes {
   width: 3rem;
   margin-bottom: .5rem;
 }
 
-.obs-cta-1 .obs-title {
+.bpp-cta-1 .bpp-title {
   font-size: 2rem;
 }
 
-.obs-cta-1 .obs-subtitle {
+.bpp-cta-1 .bpp-subtitle {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 200;
 }
 
-.obs-cta-1 .obs-text {
+.bpp-cta-1 .bpp-text {
   font-size: 80%;
   color: #adb5bd;
 }

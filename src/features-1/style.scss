@@ -5,37 +5,37 @@
 $primary-color: #070707;
 $primary-color-light: lighten($primary-color, 10);
 
-.obs-feature-1 {
+.bpp-feature-1 {
   background-color: #fff;
   padding-top: 6rem;
   padding-bottom: 6rem;
   color: $primary-color;
 
-  .obs-block-title {
+  .bpp-block-title {
     margin-bottom: 5rem;
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  .obs-feature {
+  .bpp-feature {
     margin-bottom: 5rem;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .obs-icon {
+  .bpp-icon {
     margin: 0 auto;
     width: 100px;
     min-height: 150px;
   }
 
-  .obs-title {
+  .bpp-title {
     font-size: 1.5rem;
   }
 
-  .obs-desc {
+  .bpp-desc {
     margin-top: 1.3rem;
     color: $primary-color-light;
     line-height: 1.8;

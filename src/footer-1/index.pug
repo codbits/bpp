@@ -11,11 +11,11 @@ block append scripts
   script(async='', defer='', src=cdn.github.buttons)
   script(async='', defer='', src=cdn.twitter, charset='utf-8')
 block content
-  section(class=`obs-${slug}-${id}`)
+  section(class=`bpp-${slug}-${id}`)
     .container
       .row
         .col-sm-6.col-md-4
-          h5.obs-title Latest Changes
+          h5.bpp-title Latest Changes
           ul.list-unstyled
             li
               a(href='#') App v1.0 - Express Compatibility
@@ -30,7 +30,7 @@ block content
             li
               a(href='#') App v0.5 - Add Authentication Module
         .col-sm-6.col-md-4
-          h5.obs-title Everything App
+          h5.bpp-title Everything App
           ul.list-unstyled
             li
               a(href='#') Documentation
@@ -45,7 +45,7 @@ block content
             li
               a(href='#') Blog
         .col-sm-12.col-md-4
-          h5.obs-title The App Newsletter
+          h5.bpp-title The App Newsletter
           form
             .form-group
               input(type='email' class='form-control' aria-describedby='emailHelp' placeholder='Enter email')

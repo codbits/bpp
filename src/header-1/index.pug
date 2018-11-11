@@ -12,46 +12,46 @@ block append scripts
   script(src='https://cdn.jsdelivr.net/npm/tiny-throttle@1.0.1/dist/tiny-throttle.umd.js')
   script(src='script.js')
 block content
-  header(class=`obs-${slug}-${id}`)
-    nav(class=`obs-navbar-${id} navbar navbar-expand-lg obs-navbar-dark fixed-top`)
+  header(class=`bpp-${slug}-${id}`)
+    nav(class=`bpp-navbar-${id} navbar navbar-expand-lg bpp-navbar-dark fixed-top`)
       .container
 
-        #navbarLeft.collapse.navbar-collapse.obs-nav-left
+        #navbarLeft.collapse.navbar-collapse.bpp-nav-left
           ul.navbar-nav
             li.nav-item.dropdown
               a#navbarDropOne.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Softwares
-              .dropdown-menu.obs-dropdown-menu(aria-labelledby='navbarDropOne')
+              .dropdown-menu.bpp-dropdown-menu(aria-labelledby='navbarDropOne')
                 a.dropdown-item(href='#') Software 1
                 a.dropdown-item(href='#') Software 2
                 .dropdown-divider
                 a.media(href="#")
-                  img.obs-img(src='http://placehold.it/60x60', alt='Generic placeholder image')
+                  img.bpp-img(src='http://placehold.it/60x60', alt='Generic placeholder image')
                   .media-body
-                    p.obs-title Gamodev
-                    p.obs-text Progressively customize low-risk high-yield communities and goal-oriented content.
+                    p.bpp-title Gamodev
+                    p.bpp-text Progressively customize low-risk high-yield communities and goal-oriented content.
 
             li.nav-item.dropdown
               a#navbarDropTwo.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | Games
-              .dropdown-menu.obs-dropdown-menu(aria-labelledby='navbarDropTwo')
+              .dropdown-menu.bpp-dropdown-menu(aria-labelledby='navbarDropTwo')
                 a.media(href="#")
-                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  img.bpp-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
                   .media-body
-                    p.obs-title Game 1
-                    p.obs-text Assertively envision vertical.
+                    p.bpp-title Game 1
+                    p.bpp-text Assertively envision vertical.
                 .dropdown-divider
                 a.media(href="#")
-                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  img.bpp-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
                   .media-body
-                    p.obs-title Game 2
-                    p.obs-text Energistically reinvent.
+                    p.bpp-title Game 2
+                    p.bpp-text Energistically reinvent.
                 .dropdown-divider
                 a.media(href="#")
-                  img.obs-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
+                  img.bpp-img(src='http://placehold.it/45x45', alt='Generic placeholder image')
                   .media-body
-                    p.obs-title Game 3
-                    p.obs-text Holisticly incentivize impact.
+                    p.bpp-title Game 3
+                    p.bpp-text Holisticly incentivize impact.
                 .dropdown-divider
 
             li.nav-item.dropdown
@@ -67,7 +67,7 @@ block content
           img.brand(src='./brand.svg', alt='Gamodev')
           img.brand-alt(src='./brand-alt.svg', alt='Gamodev')
 
-        #navbarRight.collapse.navbar-collapse.obs-nav-right
+        #navbarRight.collapse.navbar-collapse.bpp-nav-right
           ul.navbar-nav.ml-auto
             li.nav-item
               a.nav-link(href='#') Knowledge base
@@ -76,8 +76,9 @@ block content
             li.nav-item
               a.btn(href='#') Join for FREE
 
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarDropOne', aria-controls='navbarDropOne', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
+
 
   section.pt-5.bg-light
     .container

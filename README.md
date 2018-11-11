@@ -1,22 +1,14 @@
-# Observatory
-A playground to explore HTML and CSS frameworks.
+# Bootstrap++
+Next-level free Bootstrap block templates.
 
 ## Templates
-* Call to action [1](https://walaxy.github.io/observatory/dist/call-to-action-1/)
-* Clients [1](https://walaxy.github.io/observatory/dist/clients-1/)
-* Features [1](https://walaxy.github.io/observatory/dist/features-1/)
-* Footer [1](https://walaxy.github.io/observatory/dist/footer-1/)
-* Header [1](https://walaxy.github.io/observatory/dist/header-1/)
-* Hero [1](https://walaxy.github.io/observatory/dist/hero-1/)
-* Pricing [1](https://walaxy.github.io/observatory/dist/pricing-1/)
-
-## Roadmap
-- [ ] [10 Templates](https://github.com/walaxy/observatory/milestone/1)
-- [ ] [50 Templates](https://github.com/walaxy/observatory/milestone/2)
-- [ ] [100 Templates](https://github.com/walaxy/observatory/milestone/3)
-
-## Developers
-Soon...
+* Call to action [1](https://codbits.github.io/bootstrap-plus-plus/dist/call-to-action-1/)
+* Clients [1](https://codbits.github.io/bootstrap-plus-plus/dist/clients-1/)
+* Features [1](https://codbits.github.io/bootstrap-plus-plus/dist/features-1/)
+* Footer [1](https://codbits.github.io/bootstrap-plus-plus/dist/footer-1/)
+* Header [1](https://codbits.github.io/bootstrap-plus-plus/dist/header-1/)
+* Hero [1](https://codbits.github.io/bootstrap-plus-plus/dist/hero-1/)
+* Pricing [1](https://codbits.github.io/bootstrap-plus-plus/dist/pricing-1/)
 
 ## License 
-Copyright [Walaxy](//walaxy.io) under the [MIT license](LICENSE.md).
+Copyright [CodBits](//CodBits.com) under the [MIT license](LICENSE.md).

@@ -2,26 +2,26 @@
 @import "../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.obs-cta-1 {
+.bpp-cta-1 {
   padding: 8rem 0;
   background-color: #fff;
 
-  .obs-shapes {
+  .bpp-shapes {
     width: 3rem;
     margin-bottom: .5rem;
   }
 
-  .obs-title {
+  .bpp-title {
     font-size: $h2-font-size;
   }
 
-  .obs-subtitle {
+  .bpp-subtitle {
     margin-bottom: 1.5rem;
     font-size: $h2-font-size;
     font-weight: 200;
   }
 
-  .obs-text {
+  .bpp-text {
     font-size: $small-font-size;
     color: $gray-500;
   }

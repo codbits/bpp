@@ -1,5 +1,5 @@
 $(function () {
-  $('.obs-icon svg').each(function () {
+  $('.bpp-icon svg').each(function () {
     var $this = $(this)
     var type = $this.data('type') || ''
     var start = $this.data('start') || ''

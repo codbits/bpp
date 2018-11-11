@@ -1,10 +1,10 @@
 {
-  "name": "observatory",
+  "name": "bootstrap-plus-plus",
   "version": "1.0.0",
   "description": "A playground to explore HTML and CSS frameworks",
   "main": "index.js",
-  "repository": "https://github.com/walaxy/observatory",
-  "author": "Reza Ardestani <reza@walaxy.io>",
+  "repository": "https://github.com/codbits/bootstrap-plus-plus",
+  "author": "Reza Ardestani <reza@codbits.io>",
   "license": "MIT",
   "devDependencies": {
     "bootstrap-4.1.0": "npm:bootstrap@4.1.0",

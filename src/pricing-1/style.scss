@@ -2,7 +2,7 @@
 @import "../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.obs-pricing-1 {
+.bpp-pricing-1 {
   background: #7f00ff;
   background: linear-gradient(to top, #e100ff, #7f00ff);
   padding-top: 6rem;
@@ -13,18 +13,18 @@
     max-width: 55rem;
   }
 
-  .obs-title {
+  .bpp-title {
     font-weight: 400;
     line-height: 1.9;
     font-size: $h1-font-size;
   }
 
-  .obs-desc {
+  .bpp-desc {
     color: $gray-400;
     margin-bottom: 3rem;
   }
 
-  .obs-plan {
+  .bpp-plan {
     margin-bottom: 1.5rem;
     color: $black;
     border-radius: 0.3rem;
@@ -45,24 +45,24 @@
     }
   }
 
-  .obs-plan-icon {
+  .bpp-plan-icon {
     display: block;
     margin: 2rem 0 1rem;
     font-size: $display3-size;
   }
 
-  .obs-plan-desc {
+  .bpp-plan-desc {
     color: $gray-600;
   }
 
-  .obs-plan-cost {
+  .bpp-plan-cost {
     margin-bottom: 1.1rem;
     text-transform: uppercase;
     line-height: 1.8;
     font-size: $h3-font-size;
   }
 
-  .obs-plan-btn {
+  .bpp-plan-btn {
     margin-bottom: 1rem;
     padding: 0.7rem 2rem;
     background: #bc4e9c;

@@ -2,7 +2,7 @@
 @import "../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.obs-hero-1 {
+.bpp-hero-1 {
   height: 100vh;
   min-height: 500px;
   background: #14080E url(./bg.jpg);
@@ -10,7 +10,7 @@
   background-size: cover;
   color: $white;
 
-  .obs-title {
+  .bpp-title {
     margin-bottom: 2rem;
     font-weight: $font-weight-bold;
     letter-spacing: .4rem;
@@ -21,7 +21,7 @@
     }
   }
 
-  .obs-desc {
+  .bpp-desc {
     margin-bottom: 2rem;
     font-size: $h5-font-size;
   }
@@ -55,7 +55,7 @@
     }
   }
 
-  .obs-icon {
+  .bpp-icon {
     width: 1rem;
     vertical-align: bottom;
     margin-right: .5rem;

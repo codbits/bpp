@@ -1,15 +1,15 @@
-.obs-header-1 {
+.bpp-header-1 {
   height: 400px;
   background-color: #007bff;
 }
 
-.obs-header-1 .container > div {
+.bpp-header-1 .container > div {
   -ms-flex-preferred-size: 40%;
   flex-basis: 40%;
   text-align: center;
 }
 
-.obs-navbar-1 .brand-alt {
+.bpp-navbar-1 .brand-alt {
   width: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -19,27 +19,27 @@
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.obs-navbar-1 .nav-link {
+.bpp-navbar-1 .nav-link {
   color: #fff;
 }
 
-.obs-navbar-1 .nav-link:hover {
+.bpp-navbar-1 .nav-link:hover {
   text-decoration: underline;
 }
 
-.obs-navbar-1 .nav-link:after {
+.bpp-navbar-1 .nav-link:after {
   display: none;
 }
 
-.obs-navbar-1 .obs-nav-left .nav-link {
+.bpp-navbar-1 .bpp-nav-left .nav-link {
   font-weight: bold;
 }
 
-.obs-navbar-1 .nav-item {
+.bpp-navbar-1 .nav-item {
   padding: 0.5rem 0.15rem;
 }
 
-.obs-navbar-1 .btn {
+.bpp-navbar-1 .btn {
   margin-left: 0.5rem;
   background-color: #dc3545;
   color: #fff;
@@ -47,28 +47,28 @@
   font-weight: bold;
 }
 
-.obs-navbar-light {
+.bpp-navbar-light {
   background-color: #fff;
   border-bottom: 1px solid #dee2e6;
 }
 
-.obs-navbar-light .brand {
+.bpp-navbar-light .brand {
   width: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
-.obs-navbar-light .brand-alt {
+.bpp-navbar-light .brand-alt {
   width: 25px;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.obs-navbar-light .nav-link {
+.bpp-navbar-light .nav-link {
   color: #343a40;
 }
 
-.obs-navbar-dark .brand {
+.bpp-navbar-dark .brand {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: -webkit-transform .3s;
@@ -77,7 +77,7 @@
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.obs-navbar-dark .obs-nav-right .nav-link {
+.bpp-navbar-dark .bpp-nav-right .nav-link {
   color: #dee2e6;
 }
 
@@ -112,28 +112,28 @@
   margin-bottom: 0;
 }
 
-.obs-dropdown-menu {
+.bpp-dropdown-menu {
   padding-bottom: 0;
 }
 
-.obs-dropdown-menu .media {
+.bpp-dropdown-menu .media {
   padding: 1rem 1.5rem 0;
   min-width: 300px;
 }
 
-.obs-dropdown-menu .media:hover, .obs-dropdown-menu .media:focus {
+.bpp-dropdown-menu .media:hover, .bpp-dropdown-menu .media:focus {
   text-decoration: none;
 }
 
-.obs-dropdown-menu .obs-img {
+.bpp-dropdown-menu .bpp-img {
   margin-right: 1rem;
 }
 
-.obs-dropdown-menu .obs-title {
+.bpp-dropdown-menu .bpp-title {
   margin-bottom: 0;
 }
 
-.obs-dropdown-menu .obs-text {
+.bpp-dropdown-menu .bpp-text {
   color: #6c757d;
   font-size: 0.875rem;
 }

@@ -2,17 +2,17 @@
 @import "../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.obs-client-1 {
+.bpp-client-1 {
   background: #fff;
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 4rem;
 
-  .obs-title {
+  .bpp-title {
     font-weight: 400;
   }
 
-  .obs-desc {
+  .bpp-desc {
     color: $gray-600;
     margin-bottom: 3rem;
   }
@@ -21,7 +21,7 @@
     margin: auto 1rem 1.5rem;
   }
 
-  .obs-brand {
+  .bpp-brand {
     height: 45px;
     filter: grayscale(100%);
     transition: 0.5s all;

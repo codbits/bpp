@@ -1,4 +1,4 @@
-.obs-hero-1 {
+.bpp-hero-1 {
   height: 100vh;
   min-height: 500px;
   background: #14080E url(./bg.jpg);
@@ -7,7 +7,7 @@
   color: #fff;
 }
 
-.obs-hero-1 .obs-title {
+.bpp-hero-1 .bpp-title {
   margin-bottom: 2rem;
   font-weight: 700;
   letter-spacing: .4rem;
@@ -15,50 +15,50 @@
 }
 
 @media (max-width: 767.98px) {
-  .obs-hero-1 .obs-title {
+  .bpp-hero-1 .bpp-title {
     font-size: 2rem;
   }
 }
 
-.obs-hero-1 .obs-desc {
+.bpp-hero-1 .bpp-desc {
   margin-bottom: 2rem;
   font-size: 1.25rem;
 }
 
-.obs-hero-1 .form-group,
-.obs-hero-1 .form-control {
+.bpp-hero-1 .form-group,
+.bpp-hero-1 .form-control {
   width: 100%;
 }
 
-.obs-hero-1 .form-control,
-.obs-hero-1 .btn {
+.bpp-hero-1 .form-control,
+.bpp-hero-1 .btn {
   border-radius: 5rem;
 }
 
-.obs-hero-1 .form-control {
+.bpp-hero-1 .form-control {
   padding: .8rem 1.5rem;
   font-size: 1rem;
 }
 
-.obs-hero-1 .btn {
+.bpp-hero-1 .btn {
   padding: .6rem 1.5rem;
 }
 
 @media (max-width: 575.98px) {
-  .obs-hero-1 .btn {
+  .bpp-hero-1 .btn {
     margin-top: 1rem;
     width: 100%;
   }
 }
 
 @media (min-width: 576px) {
-  .obs-hero-1 .btn {
+  .bpp-hero-1 .btn {
     position: absolute;
     right: 18px;
   }
 }
 
-.obs-hero-1 .obs-icon {
+.bpp-hero-1 .bpp-icon {
   width: 1rem;
   vertical-align: bottom;
   margin-right: .5rem;
