@@ -1,0 +1,20 @@
+doctype html
+html
+  block vars
+  head
+    title #{title}
+    meta(name="description", content="Next-level free resources for Bootstrap framework")
+    block stylesheets
+      link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto:100,300,400')
+      link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
+      link(rel='stylesheet', type='text/css', href=locals.cdns.iconmonstr)
+      link(rel='stylesheet', type='text/css', href=`${locals.baseUrl}/style.css`)
+    block scripts
+      script(src=locals.cdns.jquery)
+      script(src=locals.cdns.enquire)
+      script(src=locals.cdns.savvior)
+      script(src=`${locals.baseUrl}/script.js`)
+    block inlineStyle
+  body(class=bodyClass)
+    block content
+    block scriptsFooter

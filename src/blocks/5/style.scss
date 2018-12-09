@@ -1,0 +1,141 @@
+@import "../../../node_modules/bootstrap-4.1.1/scss/functions";
+@import "../../../node_modules/bootstrap-4.1.1/scss/variables";
+@import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
+
+.bpp-header-1 {
+  height: 400px;
+  background-color: $primary;
+
+  .container > div {
+    flex-basis: 40%;
+    text-align: center;
+  }
+}
+
+.bpp-navbar-1 {
+  .brand-alt {
+    width: 0;
+    transform: scale(0);
+    transition: transform .3s;
+  }
+
+  .nav-link {
+    color: $white;
+
+    @include hover {
+      text-decoration: underline;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .bpp-nav-left .nav-link {
+    font-weight: bold;
+  }
+
+  .nav-item {
+    padding: $spacer * .5 $spacer * .15;
+  }
+
+  .btn {
+    margin-left: $spacer * .5;
+    background-color: $danger;
+    color: $white;
+    border-radius: 0;
+    font-weight: bold;
+  }
+}
+
+// Light
+.bpp-navbar-light {
+  background-color: $white;
+  border-bottom: 1px solid $gray-300;
+
+  .brand {
+    width: 0;
+    transform: scale(0);
+  }
+
+  .brand-alt {
+    width: 25px;
+    transform: scale(1);
+  }
+
+  .nav-link {
+    color: $dark;
+  }
+}
+
+// Dark
+.bpp-navbar-dark {
+  .brand {
+    transform: scale(1);
+    transition: transform .3s;
+  }
+
+  // Nav right
+  .bpp-nav-right {
+    .nav-link {
+      color: $gray-300;
+    }
+  }
+}
+
+.dropdown-menu {
+  top: 63px;
+  border-radius: 0;
+  border-width: 0;
+  border-top: 3px solid $danger;
+
+  &::before{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    left: 15%;
+    margin-left: .255em;
+    vertical-align: .1em;
+    content: "";
+    border-top: 0;
+    border-right: .3em solid #0000;
+    border-bottom: .3em solid $danger;
+    border-left: .3em solid #0000;
+  }
+}
+
+.dropdown-item {
+  padding: $spacer * .5 $spacer * 1.5;
+  color: $link-color;
+}
+
+.dropdown-divider {
+  margin-bottom: 0;
+}
+
+.bpp-dropdown-menu {
+  padding-bottom: 0;
+
+  .media {
+    padding: $spacer $spacer * 1.5 0;
+    min-width: 300px;
+
+    @include hover-focus {
+      text-decoration: none;
+    }
+  }
+
+  .bpp-img {
+    margin-right: $spacer;
+  }
+
+  .bpp-title {
+    margin-bottom: 0;
+  }
+
+  .bpp-text {
+    color: $gray-600;
+    font-size: $font-size-sm;
+  }
+}

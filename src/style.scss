@@ -1,0 +1,131 @@
+@import "../node_modules/bootstrap-4.1.1/scss/functions";
+@import "../node_modules/bootstrap-4.1.1/scss/variables";
+@import "../node_modules/bootstrap-4.1.1/scss/mixins";
+
+$bpp-sm-font-size: .8rem;
+$bpp-primary-color: #2b2b28;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $bpp-primary-color;
+}
+
+a {
+  color: $bpp-primary-color;
+
+    @include hover-focus {
+      text-decoration: none;
+      color: $gray-500;
+    }
+}
+
+.bpp-hero {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #343a40;
+  color: #fff;
+
+  .bpp-title {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  small {
+    display: block;
+    font-size: $bpp-sm-font-size;
+    color: #ffffff80;
+  }
+}
+
+.bpp-items {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bpp-loading {
+  visibility: hidden;
+}
+
+.bpp-items-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+
+.bpp-items-desc {
+  font-size: $bpp-sm-font-size;
+  color: $gray-500;
+  margin-bottom: 1rem;
+}
+
+.bpp-item {
+  position: relative;
+  display: block;
+  line-height: 0;
+  padding: 5%;
+  background-color: #f8f9fa;
+  border: 1px solid white;
+  transition: $transition-base;
+
+  @include hover-focus() {
+    background-color: darken(#f8f9fa, 2%);
+    text-decoration: none;
+
+    .bpp-item-title {
+      color: $bpp-primary-color;
+      text-shadow: 1px 1px 5px darken(#f8f9fa, 2%);
+    }
+
+    .bpp-item-img {
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.bpp-item-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bpp-item-img {
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transition: $transition-base;
+}
+
+.bpp-item-title {
+  color: #343a4000;
+  font-size: 2.1rem;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  font-weight: 100;
+  text-shadow: 1px 1px 5px #cccccc;
+  transition: $transition-base;
+
+  span {
+    font-size: .8rem;
+  }
+}
+
+.bpp-item-tags {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 0 1rem;
+  font-size: .8rem;
+
+  a {
+    margin-right: .4rem;
+  }
+}
+
+.column { float: left; }
+
+.size-1of2 { width: 50%; }
+
+.size-1of3 { width: 33.33333%; }
+
+.size-1of4 { width: 25%; }

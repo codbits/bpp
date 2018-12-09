@@ -1,0 +1,17 @@
+doctype html
+html
+  block vars
+    - var type = 'block'
+    - var title = `Block ${id}`
+  head
+    title #{title} - Bootstrap++
+    meta(name="description", content="Free HTML, CSS, JS block template for Bootstrap framework")
+    link(rel="canonical", href=`${locals.baseUrl}/blocks/${id}/`)
+    block stylesheets
+      link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
+      link(rel='stylesheet', type='text/css', href='./style.css')
+    block scripts
+    block inlineStyle
+  body(class=bodyClass)
+    block content
+    block scriptsFooter

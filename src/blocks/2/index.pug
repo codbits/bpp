@@ -1,0 +1,28 @@
+extend ../../includes/_layout-block.pug
+
+block vars
+  - var id = 1
+  - var slug = 'client'
+  - var title = `Clients - ${id}`
+  - var bodyClass = 'bg-dark mt-5 mb-5'
+
+block append stylesheets
+  link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
+  link(rel='stylesheet', type='text/css', href='./style.css')
+
+block content
+  section(class=`bpp-${slug}-${id}`)
+    .container.text-center
+      h2.bpp-title Our great customers
+      p.bpp-desc These big companies are using our service to their advantage
+      ul.list-inline
+        li.list-inline-item
+          img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/basekit.svg', alt="")
+        li.list-inline-item
+          img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/bootstrap.svg', alt="")
+        li.list-inline-item
+          img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/centos.svg', alt="")
+        li.list-inline-item
+          img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/divshot.svg', alt="")
+        li.list-inline-item
+          img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/flickr.svg', alt="")

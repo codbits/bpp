@@ -1,0 +1,78 @@
+@import "../../../node_modules/bootstrap-4.1.1/scss/functions";
+@import "../../../node_modules/bootstrap-4.1.1/scss/variables";
+@import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
+
+.bpp-pricing-1 {
+  background: #7f00ff;
+  background: linear-gradient(to top, #e100ff, #7f00ff);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  color: #fff;
+
+  .container {
+    max-width: 55rem;
+  }
+
+  .bpp-title {
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: $h1-font-size;
+  }
+
+  .bpp-desc {
+    color: $gray-400;
+    margin-bottom: 3rem;
+  }
+
+  .bpp-plan {
+    margin-bottom: 1.5rem;
+    color: $black;
+    border-radius: 0.3rem;
+    border: 0.5rem solid #ffffff36;
+
+    .list-group-item {
+      border-radius: 0;
+      border-right-width: 0;
+      border-left-width: 0;
+
+      &:first-child {
+        border-top-width: 0;
+      }
+
+      &:last-child {
+        border-bottom-width: 0;
+      }
+    }
+  }
+
+  .bpp-plan-icon {
+    display: block;
+    margin: 2rem 0 1rem;
+    font-size: $display3-size;
+  }
+
+  .bpp-plan-desc {
+    color: $gray-600;
+  }
+
+  .bpp-plan-cost {
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-size: $h3-font-size;
+  }
+
+  .bpp-plan-btn {
+    margin-bottom: 1rem;
+    padding: 0.7rem 2rem;
+    background: #bc4e9c;
+    background: #7f00ff;
+    border-width: 0;
+    border-radius: 2rem;
+    text-transform: uppercase;
+
+    @include hover-focus-active {
+      background: #e100ff;
+    }
+  }
+}

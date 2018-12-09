@@ -1,0 +1,25 @@
+extend includes/_layout.pug
+
+block vars
+  - var title = `${locals.title} ${locals.separator} ${locals.desc}`
+
+block content
+  header.bpp-hero
+    .container
+      h1.bpp-title
+        small Next-level 
+          span.text-danger free 
+          | resources for Bootstrap
+        | #{locals.title}
+
+  each items, key in locals.items
+    section.bpp-items.clearfix
+      .container
+        .d-flex.justify-content-between.align-items-center
+          div
+            h2.bpp-items-title= items.title
+            p.bpp-items-desc= items.desc
+          a(href=`${key}`) View all &rarr;
+      - items = items.items
+      - itemsType = key
+      include includes/_items.pug

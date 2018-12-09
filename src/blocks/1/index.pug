@@ -1,0 +1,21 @@
+extend ../../includes/_layout-block.pug
+
+block prepend vars
+  - var id = '1'
+  - var bodyClass = 'pt-5 bg-primary'
+
+block content
+  section(class=`bpp-${type}-${id}`)
+    .container
+      .row.align-items-center
+        .col-md-6
+          include shapes.svg
+          h3.bpp-title Not ready yet, hmmm?
+          h4.bpp-subtitle Try App free for 14 days.
+          p.bpp-text All accounts &middot; Try full features for 14 days &middot; No credit card required
+        .col-md-6.col-lg-5.offset-lg-1
+          form
+            .form-group
+              input(type='email' class='form-control' aria-describedby='emailHelp' placeholder='Enter email')
+            button(type='submit' class='btn btn-primary btn-block') Get started
+

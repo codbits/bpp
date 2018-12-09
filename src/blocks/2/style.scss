@@ -1,0 +1,33 @@
+@import "../../../node_modules/bootstrap-4.1.1/scss/functions";
+@import "../../../node_modules/bootstrap-4.1.1/scss/variables";
+@import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
+
+.bpp-block-2 {
+  background: #fff;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+
+  .bpp-title {
+    font-weight: 400;
+  }
+
+  .bpp-desc {
+    color: $gray-600;
+    margin-bottom: 3rem;
+  }
+
+  .list-inline-item {
+    margin: auto 1rem 1.5rem;
+  }
+
+  .bpp-brand {
+    height: 45px;
+    filter: grayscale(100%);
+    transition: 0.5s all;
+
+    @include hover-focus {
+      filter: grayscale(10%);
+    }
+  }
+}

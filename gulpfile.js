@@ -1,21 +1,30 @@
-var gulp = require('gulp');
-var newer = require('gulp-newer');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var pug = require('gulp-pug');
-var pugLinter = require('gulp-pug-linter');
-var autoprefixer = require('gulp-autoprefixer');
-var plumber = require('gulp-plumber');
+var gulp = require('gulp')
+var fs = require('fs')
+var newer = require('gulp-newer')
+var browserSync = require('browser-sync').create()
+var sass = require('gulp-sass')
+var pug = require('gulp-pug')
+var pugLinter = require('gulp-pug-linter')
+var autoprefixer = require('gulp-autoprefixer')
+var plumber = require('gulp-plumber')
 // var gulpIf = require('gulp-if')
-var watch = require('gulp-watch');
-var standard = require('gulp-standard');
-var $ = require('gulp-load-plugins')();
+var watch = require('gulp-watch')
+var standard = require('gulp-standard')
+var $ = require('gulp-load-plugins')()
+var _ = require('lodash')
+var converter = require('number-to-words')
+
+var development = $.environments.development
+var production = $.environments.production
+
+var config = JSON.parse(fs.readFileSync('./config.json'));
+config.baseUrl = development() ? config.urls.development : config.urls.production
 
 gulp.task('default', [ 'serve' ]);
 
 gulp.task('serve', [ 'html', 'imgs', 'scss', 'js' ], () => {
   browserSync.init({
-    server: './dist/',
+    server: './docs/',
     open: false,
     reloadDelay: 500
   });
@@ -28,23 +37,36 @@ gulp.task('serve', [ 'html', 'imgs', 'scss', 'js' ], () => {
 
 gulp.task('html', () => {
   return gulp
-    .src([ '!./src/_layout.pug', './src/**/*.pug' ])
+    .src([ '!./src/includes/**', './src/**/*.pug' ])
     .pipe(plumber())
-    .pipe(newer('./dist'))
+    .pipe(newer('./docs'))
     .pipe(pugLinter())
     .pipe(pugLinter.reporter())
-    .pipe(pug())
+    .pipe(pug({
+      data: config,
+      locals: {
+        _,
+        converter
+      },
+      filters: {
+        'randomProperty': function (obj) {
+          var keys = Object.keys(obj)
+          return obj[keys[ keys.length * Math.random() << 0]];
+        }
+      }
+    }))
     .pipe($.htmlPrettify({
       indent_size: 2
     }))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./docs'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('imgs', () => {
   return gulp
     .src('./src/**/*.{png,gif,jpg,svg}')
-    .pipe(gulp.dest('./dist'))
+    // .pipe($.imagemin())
+    .pipe(gulp.dest('./docs'))
     .pipe(browserSync.stream());
   });
 
@@ -58,26 +80,26 @@ gulp.task('scss', () => {
         cascade: false
       })
     )
-    .pipe(newer('./dist'))
-    .pipe(gulp.dest('./dist'))
+    .pipe(newer('./docs'))
+    .pipe(gulp.dest('./docs'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('js', () => {
   return gulp
     .src('./src/**/*.js')
-    .pipe(standard())
-    .pipe(
-      standard.reporter('default', {
-        breakOnError: false,
-        quiet: true
-      })
-    )
-    .pipe(newer('./dist'))
-    .pipe(gulp.dest('./dist'))
+    // .pipe(standard())
+    // .pipe(
+    //   standard.reporter('default', {
+    //     breakOnError: false,
+    //     quiet: true
+    //   })
+    // )
+    .pipe(newer('./docs'))
+    .pipe(gulp.dest('./docs'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('copy:demo', () => {
-  return gulp.src('./dist/**/*').pipe(gulp.dest('../demo/sputnik'));
+  return gulp.src('./docs/**/*').pipe(gulp.dest('../demo/sputnik'));
 });
