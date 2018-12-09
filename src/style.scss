@@ -112,12 +112,13 @@ a {
 }
 
 .bpp-item-tags {
-  position: relative;
-  z-index: 1;
+
   padding: 1.5rem 0 1rem;
   font-size: .8rem;
 
   a {
+    position: relative;
+    z-index: 1;
     margin-right: .4rem;
   }
 }
