@@ -1,10 +1,10 @@
 .container.bpp-masonry.bpp-loading
   each item, index in items
     - index = locals._.trim(index)
-    - const path = `${locals.baseUrl}/${itemsType}/${index}`
-    div(class="bpp-item", href=path)
+    - const path = `${locals.baseUrl}/${itemsType}/${index}/`
+    div(class="bpp-item")
       a(class="bpp-item-link", href=path)
-      img(class="bpp-item-img", src=`${path}/screenshot.jpg`, alt=`${locals.title} ${locals._.replace(item.tags, ',', ' ')} ${itemsType}`)
+      img(class="bpp-item-img", src=`${path}screenshot.jpg`, alt=`${locals.title} ${locals._.replace(item.tags, ',', ' ')} ${itemsType}`)
       h2.bpp-item-title.text-capitalize
         span N°
         = index
