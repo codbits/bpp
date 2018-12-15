@@ -120,6 +120,6 @@ gulp.task('clean', () => {
   return del(['docs']);
 });
 
-gulp.task('default', [ 'serve' ]);
+gulp.task('default', $.sequence('clean', 'serve'));
 
 gulp.task('publish', $.sequence('clean', 'html', 'imgs', 'scss', 'js'));
