@@ -28,11 +28,14 @@
     "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js"
   },
   "items": {
+    " 9": {
+      "tags": [ "block", "hero", "header", "intro" ]
+    },
     " 8": {
-      "tags": [ "block", "hero", "header" ]
+      "tags": [ "block", "hero", "header", "intro" ]
     },
     " 7": {
-      "tags": [ "block", "form", "hero", "header" ]
+      "tags": [ "block", "form", "hero", "header", "intro" ]
     },
     " 6": {
       "tags": [ "block", "pricing" ]

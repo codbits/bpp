@@ -1,0 +1,13 @@
+extend ../../includes/_layout-item.pug
+
+block prepend vars
+  - var id = 9
+
+block content
+  section(class=`bpp-${id}`)
+    .container
+      h2.bpp-title Helping you through the marketing solutions
+      p.bpp-desc Do you know the secret behind an award winning web agency?
+        br
+        | Holisticly fashion highly efficient channels rather than open-source e-business.
+      a(href="#" class="bpp-btn btn btn-danger btn-lg") Checkout our solutions 
