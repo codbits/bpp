@@ -28,35 +28,29 @@
     "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js"
   },
   "items": {
-    "blocks": {
-      "title": "Blocks",
-      "desc": "Standalone block templates",
-      "items": {
-        " 8": {
-          "tags": [ "header", "form" ]
-        },
-        " 7": {
-          "tags": [ "header", "form" ]
-        },
-        " 6": {
-          "tags": [ "header", "form" ]
-        },
-        " 5": {
-          "tags": [ "header", "form" ]
-        },
-        " 4": {
-          "tags": [ "header", "form" ]
-        },
-        " 3": {
-          "tags": [ "header", "form" ]
-        },
-        " 2": {
-          "tags": [ "header", "form" ]
-        },
-        " 1": {
-          "tags": [ "call-to-action", "form" ]
-        }
-      }
+    " 8": {
+      "tags": [ "block", "hero", "header" ]
+    },
+    " 7": {
+      "tags": [ "block", "form", "hero", "header" ]
+    },
+    " 6": {
+      "tags": [ "block", "pricing" ]
+    },
+    " 5": {
+      "tags": [ "block", "header", "navbar" ]
+    },
+    " 4": {
+      "tags": [ "block", "footer", "form" ]
+    },
+    " 3": {
+      "tags": [ "block", "content", "features", "grid" ]
+    },
+    " 2": {
+      "tags": [ "block", "clients" ]
+    },
+    " 1": {
+      "tags": [ "block", "call-to-action", "form" ]
     }
   }
 }

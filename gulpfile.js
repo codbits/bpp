@@ -13,14 +13,30 @@ var standard = require('gulp-standard')
 var $ = require('gulp-load-plugins')()
 var _ = require('lodash')
 var converter = require('number-to-words')
+var del = require('del')
 
 var development = $.environments.development
 var production = $.environments.production
 
 var config = JSON.parse(fs.readFileSync('./config.json'));
 config.baseUrl = development() ? config.urls.development : config.urls.production
+config.environment = development() ? 'development' : 'production'
 
-gulp.task('default', [ 'serve' ]);
+var tags = {};
+
+_.forEach(config.items, function(item) {
+  _.forEach(item.tags, function(tag){
+
+    if (tags[tag]) {
+      tags[tag] = Number(tags[tag]) + 1;
+      return;
+    }
+
+    tags[tag] = 1;
+  })
+});
+
+config.tags = tags
 
 gulp.task('serve', [ 'html', 'imgs', 'scss', 'js' ], () => {
   browserSync.init({
@@ -100,6 +116,10 @@ gulp.task('js', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('copy:demo', () => {
-  return gulp.src('./docs/**/*').pipe(gulp.dest('../demo/sputnik'));
+gulp.task('clean', () => {
+  return del(['docs']);
 });
+
+gulp.task('default', [ 'serve' ]);
+
+gulp.task('publish', $.sequence('clean', 'html', 'imgs', 'scss', 'js'));

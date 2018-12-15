@@ -123,6 +123,17 @@ a {
   }
 }
 
+.bpp-tag {
+  display: block;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid white;
+
+  .badge {
+    margin-top: .15rem;
+  }
+}
+
 .column { float: left; }
 
 .size-1of2 { width: 50%; }

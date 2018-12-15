@@ -1,0 +1,15 @@
+extend _layout.pug
+
+block prepend vars
+  - var title = `Bootstrap ${locals._.startCase(tag)} Template - ${locals.title}`
+
+block content
+
+  include ../includes/_header
+
+  section.bpp-items
+    .container.pb-3
+      h2.h3
+        a(class="bpp-back" href=`${locals.baseUrl}/tags/`) &larr; 
+        | \ #{locals._.startCase(tag)} Template
+    include ../includes/_items.pug
