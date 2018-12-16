@@ -2,6 +2,7 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
+$bpp-id: 8;
 $bpp-red: #fb2d2d;
 $bpp-dark: #020202;
 
@@ -9,7 +10,7 @@ body {
   background-color: $bpp-dark;
 }
 
-.bpp-hero-2 {
+.bpp-#{$bpp-id} {
   font-family: 'Roboto', sans-serif;
   height: 800px;
   background: $bpp-dark url(./bg.jpg);
