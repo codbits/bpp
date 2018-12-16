@@ -1,24 +1,24 @@
-.bpp-block-2 {
+.bpp-2 {
   background: #fff;
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 4rem;
 }
 
-.bpp-block-2 .bpp-title {
+.bpp-2 .bpp-title {
   font-weight: 400;
 }
 
-.bpp-block-2 .bpp-desc {
+.bpp-2 .bpp-desc {
   color: #6c757d;
   margin-bottom: 3rem;
 }
 
-.bpp-block-2 .list-inline-item {
+.bpp-2 .list-inline-item {
   margin: auto 1rem 1.5rem;
 }
 
-.bpp-block-2 .bpp-brand {
+.bpp-2 .bpp-brand {
   height: 45px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -26,7 +26,7 @@
   transition: 0.5s all;
 }
 
-.bpp-block-2 .bpp-brand:hover, .bpp-block-2 .bpp-brand:focus {
+.bpp-2 .bpp-brand:hover, .bpp-2 .bpp-brand:focus {
   -webkit-filter: grayscale(10%);
   filter: grayscale(10%);
 }

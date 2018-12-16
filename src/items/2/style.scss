@@ -2,7 +2,9 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.bpp-block-2 {
+$bpp-id: 2;
+
+.bpp-#{$bpp-id} {
   background: #fff;
   background-size: cover;
   padding-top: 6rem;

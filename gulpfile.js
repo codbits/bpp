@@ -121,7 +121,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('zip', $.folders('docs/items', (folder) => {
-  return gulp.src(`docs/items/${folder}/*`)
+  return gulp.src(`docs/items/${folder}/**/*`)
     .pipe($.zip(`bpp-${folder}.zip`))
     .pipe(gulp.dest(`docs/items/${folder}/`));
 }));

@@ -2,10 +2,10 @@ extend ../../includes/_layout-item.pug
 
 block prepend vars
   - var id = 2
-  - var bodyClass = 'bg-dark mt-5 mb-5'
+  - var bodyClass = 'bg-dark'
 
-block content
-  section(class=`bpp-${type}-${id}`)
+block append content
+  section(class=`bpp-${id}`)
     .container.text-center
       h2.bpp-title Our great customers
       p.bpp-desc These big companies are using our service to their advantage

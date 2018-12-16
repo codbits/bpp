@@ -2,14 +2,15 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-$primary-color: #070707;
-$primary-color-light: lighten($primary-color, 10);
+$bpp-id: 3;
+$bpp-primary-color: #070707;
+$bpp-primary-color-light: lighten($bpp-primary-color, 10);
 
-.bpp-feature-1 {
+.bpp-#{$bpp-id} {
   background-color: #fff;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  color: $primary-color;
+  color: $bpp-primary-color;
 
   .bpp-block-title {
     margin-bottom: 5rem;
@@ -37,7 +38,7 @@ $primary-color-light: lighten($primary-color, 10);
 
   .bpp-desc {
     margin-top: 1.3rem;
-    color: $primary-color-light;
+    color: $bpp-primary-color-light;
     line-height: 1.8;
   }
 }

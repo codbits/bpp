@@ -1,22 +1,16 @@
-extend ../../includes/_layout.pug
+extend ../../includes/_layout-item.pug
 
-block vars
-  - var id = 1
-  - var slug = 'feature'
-  - var title = `Features ${id}`
-  - var bodyClass = 'bg-danger mt-5 mb-5'
-
-block append stylesheets
-  link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
-  link(rel='stylesheet' type='text/css' href='./style.css')
+block prepend vars
+  - var id = 3
+  - var bodyClass = 'bg-dark'
 
 block append scripts
   script(src=locals.cdns.jquery)
   script(src=locals.cdns.vivus)
   script(src='./script.js')
 
-block content
-  section(class=`bpp-${slug}-${id}`)
+block append content
+  section(class=`bpp-${id}`)
     .container.text-center
       h2.bpp-block-title Features
       .row

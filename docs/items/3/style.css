@@ -1,35 +1,35 @@
-.bpp-feature-1 {
+.bpp-3 {
   background-color: #fff;
   padding-top: 6rem;
   padding-bottom: 6rem;
   color: #070707;
 }
 
-.bpp-feature-1 .bpp-block-title {
+.bpp-3 .bpp-block-title {
   margin-bottom: 5rem;
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.bpp-feature-1 .bpp-feature {
+.bpp-3 .bpp-feature {
   margin-bottom: 5rem;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bpp-feature-1 .bpp-icon {
+.bpp-3 .bpp-icon {
   margin: 0 auto;
   width: 100px;
   min-height: 150px;
 }
 
-.bpp-feature-1 .bpp-title {
+.bpp-3 .bpp-title {
   font-size: 1.5rem;
 }
 
-.bpp-feature-1 .bpp-desc {
+.bpp-3 .bpp-desc {
   margin-top: 1.3rem;
   color: #212121;
   line-height: 1.8;
