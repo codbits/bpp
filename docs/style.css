@@ -94,30 +94,25 @@ a:hover, a:focus {
 }
 
 .bpp-item-title {
-  color: #343a4000;
-  font-size: 2.1rem;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-  font-weight: 100;
-  text-shadow: 1px 1px 5px #cccccc;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.bpp-item-title span {
-  font-size: .8rem;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .bpp-item-tags {
-  padding: 1.5rem 0 1rem;
-  font-size: .8rem;
+  font-size: .7rem;
+  line-height: 1.8;
 }
 
 .bpp-item-tags a {
+  display: inline-block;
   position: relative;
+  color: #6c757d;
   z-index: 1;
   margin-right: .4rem;
+}
+
+.bpp-item-tags a:hover {
+  color: #2b2b28;
 }
 
 .bpp-tag {
