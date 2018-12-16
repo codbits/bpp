@@ -1,10 +1,9 @@
 doctype html
 html
   block vars
-    - var type = 'block'
-    - var title = `Block ${id}`
+    - var title = `Item ${id}`
   head
-    title #{title} - Bootstrap++
+    title Bootstrap #{title} - #{locals.title}
     meta(name="description", content="Free HTML, CSS, JS block template for Bootstrap framework")
     link(rel="canonical", href=`${locals.baseUrl}/items/${id}/`)
     block stylesheets
@@ -14,5 +13,8 @@ html
     block inlineStyle
   body(class=bodyClass)
     block content
+      section(class="bpp-item-navbar p-3", style="z-index:999; position: fixed; right: 0; bottom: 0;")
+        a(href=`${locals.baseUrl}/items/${id}/bpp-${id}.zip`, class="btn btn-primary", download) Download
+
     block scriptsFooter
     include _tracking.pug

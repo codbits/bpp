@@ -15,6 +15,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-environments": "^0.1.2",
+    "gulp-folders": "^1.1.0",
     "gulp-html-prettify": "^0.0.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^5.0.3",
@@ -27,6 +28,7 @@
     "gulp-sequence": "^1.0.0",
     "gulp-standard": "^10.1.1",
     "gulp-watch": "^4.3.11",
+    "gulp-zip": "^4.2.0",
     "lodash": "^4.17.11",
     "number-to-words": "^1.2.4",
     "stylelint-config-standard": "^18.2.0"

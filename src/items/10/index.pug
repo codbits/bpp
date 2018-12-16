@@ -1,0 +1,16 @@
+extend ../../includes/_layout-item.pug
+
+block prepend vars
+  - var id = 10
+
+block append content
+  section(class=`bpp-${id}`)
+    .container-fluid
+      img.bpp-brand(src='https://cdn.jsdelivr.net/gh/gilbarbara/logos@2018.01/logos/google-photos.svg', alt="")
+      .bpp-content
+        h3.bpp-title Put the project's hassle behind
+        p.bpp-desc Get started today for free today.
+      .bpp-actions
+        a(href="#" class="bpp-btn bpp-try btn btn-light") Try for free
+          include iconmonstr-save-10.svg
+        a(href="#" class="bpp-btn btn btn-outline-light") Get a license 

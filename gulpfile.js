@@ -120,6 +120,12 @@ gulp.task('clean', () => {
   return del(['docs']);
 });
 
+gulp.task('zip', $.folders('docs/items', (folder) => {
+  return gulp.src(`docs/items/${folder}/*`)
+    .pipe($.zip(`bpp-${folder}.zip`))
+    .pipe(gulp.dest(`docs/items/${folder}/`));
+}));
+
 gulp.task('default', $.sequence('clean', 'serve'));
 
-gulp.task('publish', $.sequence('clean', 'html', 'imgs', 'scss', 'js'));
+gulp.task('publish', $.sequence('clean', 'html', 'imgs', 'scss', 'js', 'zip'));

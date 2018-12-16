@@ -28,6 +28,9 @@
     "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js"
   },
   "items": {
+    " 10": {
+      "tags": [ "block", "call-to-action" ]
+    },
     " 9": {
       "tags": [ "block", "hero", "header", "intro" ]
     },
