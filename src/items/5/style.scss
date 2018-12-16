@@ -2,7 +2,9 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.bpp-header-1 {
+$bpp-id: 5;
+
+.bpp-#{$bpp-id} {
   height: 400px;
   background-color: $primary;
 
@@ -12,7 +14,7 @@
   }
 }
 
-.bpp-navbar-1 {
+.bpp-navbar-#{$bpp-id} {
   .brand-alt {
     width: 0;
     transform: scale(0);

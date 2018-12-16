@@ -1,18 +1,16 @@
-extend ../../includes/_layout.pug
-block vars
-  - var id = 1
-  - var slug = 'header'
-  - var title = `Header ${id}`
-block append stylesheets
-  link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
-  link(rel='stylesheet', type='text/css', href='style.css')
+extend ../../includes/_layout-item.pug
+
+block prepend vars
+  - var id = 5
+
 block append scripts
   script(src=locals.cdns.jquery)
   script(src=locals.cdns.bootstrap_4.js)
   script(src='https://cdn.jsdelivr.net/npm/tiny-throttle@1.0.1/dist/tiny-throttle.umd.js')
   script(src='script.js')
-block content
-  header(class=`bpp-${slug}-${id}`)
+
+block append content
+  header(class=`bpp-${id}`)
     nav(class=`bpp-navbar-${id} navbar navbar-expand-lg bpp-navbar-dark fixed-top`)
       .container
 

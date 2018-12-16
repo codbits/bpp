@@ -1,15 +1,15 @@
-.bpp-header-1 {
+.bpp-5 {
   height: 400px;
   background-color: #007bff;
 }
 
-.bpp-header-1 .container > div {
+.bpp-5 .container > div {
   -ms-flex-preferred-size: 40%;
   flex-basis: 40%;
   text-align: center;
 }
 
-.bpp-navbar-1 .brand-alt {
+.bpp-navbar-5 .brand-alt {
   width: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -19,27 +19,27 @@
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.bpp-navbar-1 .nav-link {
+.bpp-navbar-5 .nav-link {
   color: #fff;
 }
 
-.bpp-navbar-1 .nav-link:hover {
+.bpp-navbar-5 .nav-link:hover {
   text-decoration: underline;
 }
 
-.bpp-navbar-1 .nav-link:after {
+.bpp-navbar-5 .nav-link:after {
   display: none;
 }
 
-.bpp-navbar-1 .bpp-nav-left .nav-link {
+.bpp-navbar-5 .bpp-nav-left .nav-link {
   font-weight: bold;
 }
 
-.bpp-navbar-1 .nav-item {
+.bpp-navbar-5 .nav-item {
   padding: 0.5rem 0.15rem;
 }
 
-.bpp-navbar-1 .btn {
+.bpp-navbar-5 .btn {
   margin-left: 0.5rem;
   background-color: #dc3545;
   color: #fff;

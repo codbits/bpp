@@ -2,7 +2,9 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.bpp-pricing-1 {
+$bpp-id: 6;
+
+.bpp-#{$bpp-id} {
   background: #7f00ff;
   background: linear-gradient(to top, #e100ff, #7f00ff);
   padding-top: 6rem;

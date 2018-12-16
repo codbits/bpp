@@ -1,15 +1,13 @@
-extend ../../includes/_layout.pug
-block vars
-  - var id = 1
-  - var slug = 'pricing'
-  - var title = `Pricing ${id}`
-  - var bodyClass = 'mt-5 mb-5'
+extend ../../includes/_layout-item.pug
+
+block prepend vars
+  - var id = 6
+
 block append stylesheets
-  link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
   link(rel='stylesheet', type='text/css', href=locals.cdns.iconmonstr)
-  link(rel='stylesheet', type='text/css', href='./style.css')
-block content
-  section(class=`bpp-${slug}-${id}`)
+
+block append content
+  section(class=`bpp-${id}`)
     .container.text-center
       h2.bpp-title Pricing
       p.bpp-desc

@@ -1,6 +1,6 @@
 /* eslint-disable */
 $(function () {
-  var navbar = $('.bpp-header-1 .navbar')
+  var navbar = $('.bpp-5 .navbar')
 
   function switchClass() {
     var offset = $(window).scrollTop()

@@ -2,7 +2,9 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.bpp-footer-1 {
+$bpp-id: 4;
+
+.bpp-#{$bpp-id} {
   background-color: #fff;
   padding-top: 4rem;
   padding-bottom: 4rem;

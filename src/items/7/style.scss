@@ -2,7 +2,9 @@
 @import "../../../node_modules/bootstrap-4.1.1/scss/variables";
 @import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
 
-.bpp-hero-1 {
+$bpp-id: 7;
+
+.bpp-#{$bpp-id} {
   height: 100vh;
   min-height: 500px;
   background: #14080E url(./bg.jpg);
