@@ -4,7 +4,7 @@
   "separator": "-",
   "urls": {
     "development": "http://localhost:3000",
-    "production": "https://codbits.github.io/bootstrap-plus-plus"
+    "production": "https://bpp.codbits.com"
   },
   "socialAccount": {
     "twitter": "GetBootstrap",
