@@ -1,8 +1,8 @@
-# Bootstrap++
+# B++
 Next-level free Bootstrap block templates.
 
 ## Demos
-https://codbits.com/bootstrap-plus-plus/
+https://bpp.codbits.com
 
-## License 
-Copyright [CodBits](//CodBits.com) under the [MIT license](LICENSE.md).
+## License
+Copyright [CodBits](https://bpp.codbits.com) under the [MIT license](LICENSE.md).
