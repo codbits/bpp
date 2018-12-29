@@ -1,0 +1,35 @@
+extend ../includes/_layout.pug
+
+block vars
+  - var title = `Downloads ${locals.separator} ${locals.title}`
+
+block content
+
+  include ../includes/_header
+
+  section.bpp-items.clearfix
+    .container.pb-3
+      h2.h3
+        a(class="bpp-back" href=`${locals.baseUrl}/`) &larr; 
+        | \ Downloads
+    .container
+      p All the items are free to download. For those who want to support the project and enjoy pro items, we offer the following plans.
+      .list-group.bpp-downloads
+        a(href="#" class="list-group-item list-group-item-action")
+          div(class="d-flex w-100 justify-content-between")
+            h5.mb-2.h6 Free Items 
+              span.badge.badge-pill.badge-primary Coming very soon
+            small.text-muted $2 lifetime
+          p.bpp-desc.text-muted Donate to the project and download all free items in a zip package.
+        a(href="#" class="list-group-item list-group-item-action")
+          div(class="d-flex w-100 justify-content-between")
+            h5.mb-2.h6 Free & Pro Items 
+              span.badge.badge-pill.badge-primary Coming soon
+            small.text-muted $5 per year
+          p.bpp-desc.text-muted Download all free & pro items in a zip package.
+        a(href="#" class="list-group-item list-group-item-action")
+          div(class="d-flex w-100 justify-content-between")
+            h5.mb-2.h6 Full Source Code 
+              span.badge.badge-pill.badge-primary Coming soon
+            small.text-muted $8 per year
+          p.bpp-desc.text-muted Download the source code which give you access to source pug, scss files of all free & pro items.

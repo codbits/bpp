@@ -14,8 +14,5 @@ html
     block inlineStyle
   body(class=bodyClass)
     block content
-      section(class="p-3", style="z-index:999; position: fixed; right: 0; bottom: 0;")
-        a(href=`${locals.baseUrl}/items/${id}/bpp-${id}.zip`, class="btn btn-primary", download) Download
-
     block scriptsFooter
     include _tracking.pug

@@ -2,9 +2,10 @@ header.bpp-header
   nav(class="navbar navbar-expand navbar-dark bg-dark")
     .container
       a(class="navbar-brand", href=locals.baseUrl) #{locals.title}
+      span.navbar-text.d-none.d-sm-block #{locals.desc}
       button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
         span.navbar-toggler-icon
       .collapse.navbar-collapse#navbarNavAltMarkup
         .navbar-nav.ml-auto
           a(class="nav-item nav-link", href=`${locals.baseUrl}/tags/`) Tags
-          //- button(class="nav-item btn btn-danger", role="button") Download All
+          a(class="nav-item nav-link", href=`${locals.baseUrl}/downloads/`) Downloads
