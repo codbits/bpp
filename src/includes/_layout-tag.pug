@@ -1,7 +1,7 @@
 extend _layout.pug
 
 block prepend vars
-  - var title = `Bootstrap ${locals._.startCase(tag)} Template - ${locals.title}`
+  - var title = `Bootstrap ${locals._.startCase(tag)} Templates - ${locals.title}`
 
 block content
 
@@ -10,6 +10,8 @@ block content
   section.bpp-items.clearfix
     .container.pb-3
       h2.h3
-        a(class="bpp-back" href=`${locals.baseUrl}/tags/`) &larr; 
-        | \ #{locals._.startCase(tag)} Template
+        a(class="bpp-back" href=`${locals.baseUrl}/`) &larr; 
+        | \ 
+        a(class="bpp-back" href=`${locals.baseUrl}/tags/`) Tags 
+        | \ #{locals._.startCase(tag)} Templates
     include ../includes/_items.pug
