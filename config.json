@@ -28,6 +28,9 @@
     "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js"
   },
   "items": {
+    " 13": {
+      "tags": [ "block", "about", "content", "intro" ]
+    },
     " 12": {
       "tags": [ "block", "blockquote" ]
     },
