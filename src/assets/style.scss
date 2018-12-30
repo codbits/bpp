@@ -88,6 +88,7 @@ a {
 
     .bpp-item-img {
       box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+      transform: scale(1.01);
     }
   }
 }
@@ -98,6 +99,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 .bpp-item-img {
@@ -116,10 +118,16 @@ a {
   position: absolute;
   top: -3px;
   right: 0;
-  z-index: 1;
+  z-index: 19;
+  opacity: .5;
+  transition: $transition-base;
 
   img {
     width: 18px;
+  }
+
+  @include hover-focus() {
+    opacity: 1;
   }
 }
 
@@ -131,7 +139,7 @@ a {
     display: inline-block;
     position: relative;
     color: $secondary;
-    z-index: 1;
+    z-index: 19;
     margin-right: .4rem;
 
     @include hover {

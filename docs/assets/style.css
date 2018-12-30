@@ -81,6 +81,8 @@ a:hover, a:focus {
 .bpp-item:hover .bpp-item-img, .bpp-item:focus .bpp-item-img {
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .bpp-item-link {
@@ -89,6 +91,7 @@ a:hover, a:focus {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 .bpp-item-img {
@@ -109,11 +112,18 @@ a:hover, a:focus {
   position: absolute;
   top: -3px;
   right: 0;
-  z-index: 1;
+  z-index: 19;
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .bpp-item-download img {
   width: 18px;
+}
+
+.bpp-item-download:hover, .bpp-item-download:focus {
+  opacity: 1;
 }
 
 .bpp-item-tags {
@@ -125,7 +135,7 @@ a:hover, a:focus {
   display: inline-block;
   position: relative;
   color: #6c757d;
-  z-index: 1;
+  z-index: 19;
   margin-right: .4rem;
 }
 
