@@ -1,0 +1,59 @@
+@import "../../../node_modules/bootstrap-4.1.1/scss/functions";
+@import "../../../node_modules/bootstrap-4.1.1/scss/variables";
+@import "../../../node_modules/bootstrap-4.1.1/scss/mixins";
+
+$id: 13;
+$bpp-13-bg-color: white;
+$bpp-13-shape-width: 120px;
+$bpp-13-shape-bg-color: #db2d43;
+
+.bpp-#{$id} {
+  padding: 6rem 0;
+  position: relative;
+  background-color: $bpp-13-bg-color;
+
+  .bpp-shape {
+    width: $bpp-13-shape-width;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: $bpp-13-shape-bg-color;
+    border-radius: 20px 120px 0 0;
+    text-align: center;
+
+    .bpp-title {
+      padding-bottom: 2rem;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      color: lighten($bpp-13-shape-bg-color, 20);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 10px;
+      line-height: 1.2;
+    }
+  }
+
+  .bpp-content {
+    position: relative;
+    padding: 6rem 2rem 1rem;
+    margin-left: $bpp-13-shape-width;
+
+    .bpp-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-left: -$bpp-13-shape-width + 12px;
+      margin-bottom: 3rem;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .bpp-desc {
+      line-height: 1.8;
+    }
+  }
+}
