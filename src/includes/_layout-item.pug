@@ -10,6 +10,13 @@ html
       link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto:400,500,700')
       link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
       link(rel='stylesheet', type='text/css', href='./style.css')
+      link(rel="apple-touch-icon" sizes="180x180" href=`${locals.baseUrl}/assets/apple-touch-icon.png`)
+      link(rel="icon" type="image/png" sizes="32x32" href=`${locals.baseUrl}/assets/favicon-32x32.png`)
+      link(rel="icon" type="image/png" sizes="16x16" href=`${locals.baseUrl}/assets/favicon-16x16.png`)
+      link(rel="manifest" href=`${locals.baseUrl}/assetssite.webmanifest`)
+      link(rel="mask-icon" href=`${locals.baseUrl}/assetssafari-pinned-tab.svg` color="#343a40")
+      meta(name="msapplication-TileColor" content="#343a40")
+      meta(name="theme-color" content="#ffffff")
     block scripts
     block inlineStyle
   body(class=bodyClass)

@@ -43,6 +43,15 @@ a {
   }
 }
 
+.navbar-brand {
+  padding-top: 4px;
+  line-height: 0;
+
+  img {
+    width: 30px;
+  }
+}
+
 .bpp-section-info {
   padding: 2rem;
   text-align: center;

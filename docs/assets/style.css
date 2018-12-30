@@ -34,6 +34,15 @@ a:hover, a:focus {
   margin-left: .7rem;
 }
 
+.navbar-brand {
+  padding-top: 4px;
+  line-height: 0;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
 .bpp-section-info {
   padding: 2rem;
   text-align: center;
