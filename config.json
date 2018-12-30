@@ -29,6 +29,9 @@
     "svgPorn": "https://cdn.jsdelivr.net/gh/gilbarbara/logos@2018.01/logos"
   },
   "items": {
+    " 15": {
+      "tags": [ "block", "about", "call-to-action", "content", "intro" ]
+    },
     " 14": {
       "tags": [ "block", "call-to-action" ]
     },

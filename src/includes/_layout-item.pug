@@ -2,12 +2,13 @@ doctype html
 html
   block vars
     - var title = `Item ${id}`
+    - var font = 'Roboto:400,500,700'
   head
     title Bootstrap #{title} - #{locals.title}
     meta(name="description", content="Free HTML, CSS, JS block template for Bootstrap framework")
     link(rel="canonical", href=`${locals.baseUrl}/items/${id}/`)
     block stylesheets
-      link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto:400,500,700')
+      link(rel='stylesheet', type='text/css', href=`https://fonts.googleapis.com/css?family=${font}`)
       link(rel='stylesheet', type='text/css', href=locals.cdns.bootstrap_4.css)
       link(rel='stylesheet', type='text/css', href='./style.css')
       link(rel="apple-touch-icon" sizes="180x180" href=`${locals.baseUrl}/assets/apple-touch-icon.png`)

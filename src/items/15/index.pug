@@ -1,0 +1,15 @@
+extend ../../includes/_layout-item.pug
+
+block vars
+  - var font = 'PT+Serif:700|Roboto:700'
+
+block prepend vars
+  - var id = 15
+
+block append content
+  section(class=`bpp-${id}`)
+    .container
+      .bpp-content
+        h2.bpp-title Appropriately scale user friendly bandwidth and synergistic
+        button.btn.btn-danger Learn more
+      span.bpp-subtitle Home
