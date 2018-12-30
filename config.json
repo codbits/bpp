@@ -25,9 +25,13 @@
     "vivus": "https://cdn.jsdelivr.net/npm/vivus@0.4.3/dist/vivus.min.js",
     "anime": "https://cdn.jsdelivr.net/npm/animejs@2.2.0/anime.min.js",
     "savvior": "https://cdn.jsdelivr.net/npm/savvior@0.6.1/dist/savvior.min.js",
-    "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js"
+    "enquire": "https://cdn.jsdelivr.net/npm/enquire.js@2.1.6/dist/enquire.min.js",
+    "svgPorn": "https://cdn.jsdelivr.net/gh/gilbarbara/logos@2018.01/logos"
   },
   "items": {
+    " 14": {
+      "tags": [ "block", "call-to-action" ]
+    },
     " 13": {
       "tags": [ "block", "about", "content", "intro" ]
     },
