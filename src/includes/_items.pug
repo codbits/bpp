@@ -4,11 +4,15 @@
     - index = locals._.trim(index)
     - const path = `${locals.baseUrl}/items/${index}/`
     div(class="bpp-item")
-      a(class="bpp-item-link", href=path)
+      a(class="bpp-item-link", href=`${item.future ? '#' : path}`)
       img(class="bpp-item-img", src=`${path}screenshot.jpg`, alt=`${locals.title} ${locals._.replace(item.tags, ',', ' ')} ${itemsType}`)
       h2.bpp-item-title.text-capitalize= locals.converter.toWords(index)
+        - if (item.future) {
+        span.badge.badge-dark Soon
+        - } else {
         a(href=`${locals.baseUrl}/items/${index}/bpp-${index}.zip`, class="bpp-item-download", download)
           img(src=`${locals.baseUrl}/assets/download.svg`, alt="")
+        - }
       .bpp-item-tags
         each tag in item.tags
           a(href=`${locals.baseUrl}/tags/${tag}/`) ##{tag}

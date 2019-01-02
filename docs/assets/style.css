@@ -71,27 +71,27 @@ a:hover, a:focus {
   display: block;
   line-height: 0;
   padding: 5%;
-  background-color: #f8f9fa;
+  background-color: #f3f5f7;
   border: 1px solid white;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .bpp-item:hover, .bpp-item:focus {
-  background-color: #f2f4f6;
+  background-color: #edf0f3;
   text-decoration: none;
-}
-
-.bpp-item:hover .bpp-item-title, .bpp-item:focus .bpp-item-title {
-  color: #2b2b28;
-  text-shadow: 1px 1px 5px #f2f4f6;
 }
 
 .bpp-item:hover .bpp-item-img, .bpp-item:focus .bpp-item-img {
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01);
+  -webkit-transform: scale(1.015);
+  transform: scale(1.015);
+}
+
+.bpp-item .badge {
+  position: absolute;
+  right: 0;
 }
 
 .bpp-item-link {
@@ -155,7 +155,7 @@ a:hover, a:focus {
 .bpp-tag {
   display: block;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: #f3f5f7;
   border: 1px solid white;
 }
 
@@ -181,14 +181,14 @@ a:hover, a:focus {
 
 .bpp-downloads .list-group-item {
   padding: 2rem 1.5rem;
-  background-color: #f8f9fa;
+  background-color: #f3f5f7;
   border: 1px solid white;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .bpp-downloads .list-group-item:hover {
-  background-color: #f2f4f6;
+  background-color: #edf0f3;
 }
 
 .bpp-downloads .bpp-desc {
@@ -197,8 +197,8 @@ a:hover, a:focus {
 }
 
 .bpp-footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1.2rem 0;
-  background-color: #f8f9fa;
+  background-color: #f3f5f7;
   text-align: center;
 }

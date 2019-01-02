@@ -4,6 +4,7 @@
 
 $bpp-sm-font-size: .8rem;
 $bpp-primary-color: #2b2b28;
+$bpp-gray: #f3f5f7;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -82,23 +83,23 @@ a {
   display: block;
   line-height: 0;
   padding: 5%;
-  background-color: #f8f9fa;
+  background-color: $bpp-gray;
   border: 1px solid white;
   transition: $transition-base;
 
   @include hover-focus() {
-    background-color: darken(#f8f9fa, 2%);
+    background-color: darken($bpp-gray, 2%);
     text-decoration: none;
-
-    .bpp-item-title {
-      color: $bpp-primary-color;
-      text-shadow: 1px 1px 5px darken(#f8f9fa, 2%);
-    }
 
     .bpp-item-img {
       box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-      transform: scale(1.01);
+      transform: scale(1.015);
     }
+  }
+
+  .badge {
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -160,7 +161,7 @@ a {
 .bpp-tag {
   display: block;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: $bpp-gray;
   border: 1px solid white;
 
   .badge {
@@ -181,12 +182,12 @@ a {
 .bpp-downloads {
   .list-group-item {
     padding: 2rem 1.5rem;
-    background-color: #f8f9fa;
+    background-color: $bpp-gray;
     border: 1px solid white;
     transition: $transition-base;
 
     @include hover {
-      background-color: darken(#f8f9fa, 2%);
+      background-color: darken($bpp-gray, 2%);
     }
   }
 
@@ -200,8 +201,8 @@ a {
 // Footer
 
 .bpp-footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1.2rem 0;
-  background-color: #f8f9fa;
+  background-color: $bpp-gray;
   text-align: center;
 }
