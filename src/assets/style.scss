@@ -183,6 +183,7 @@ a {
 
 .bpp-downloads {
   .list-group-item {
+    position: relative;
     padding: 2rem 1.5rem;
     background-color: $bpp-gray;
     border: 1px solid white;
@@ -193,8 +194,9 @@ a {
     }
   }
 
-  .bpp-desc {
-    font-size: .9rem;
+  .list-unstyled {
+    font-size: .8rem;
+    line-height: 1.6;
     margin-bottom: 0;
   }
 }
