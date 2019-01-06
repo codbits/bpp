@@ -1,0 +1,58 @@
+.bpp-11 {
+  padding: 5rem 0 4rem;
+  color: white;
+  background-color: #0b032d;
+}
+
+.bpp-11 .bpp-avatar {
+  margin-top: .5rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  max-width: 50px;
+  width: 50px;
+}
+
+.bpp-11 .bpp-join {
+  -webkit-animation: bpp-11-animation 2s linear infinite;
+  animation: bpp-11-animation 2s linear infinite;
+}
+
+.bpp-11 .bpp-title {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .bpp-11 .bpp-title {
+    margin-top: 1rem;
+  }
+}
+
+.bpp-11 .bpp-desc {
+  color: #adb5bd;
+}
+
+.bpp-11 .bpp-desc a {
+  color: #e14594;
+}
+
+@-webkit-keyframes bpp-11-animation {
+  from {
+    -webkit-box-shadow: 0 0 0 0 #0b032d, 0 0 0 0 #e14594;
+    box-shadow: 0 0 0 0 #0b032d, 0 0 0 0 #e14594;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 8px #0b032d, 0 0 0 10px #0b032d;
+    box-shadow: 0 0 0 8px #0b032d, 0 0 0 10px #0b032d;
+  }
+}
+
+@keyframes bpp-11-animation {
+  from {
+    -webkit-box-shadow: 0 0 0 0 #0b032d, 0 0 0 0 #e14594;
+    box-shadow: 0 0 0 0 #0b032d, 0 0 0 0 #e14594;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 8px #0b032d, 0 0 0 10px #0b032d;
+    box-shadow: 0 0 0 8px #0b032d, 0 0 0 10px #0b032d;
+  }
+}

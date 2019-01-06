@@ -1,0 +1,18 @@
+.bpp-4 {
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bpp-4 .bpp-title {
+  margin-bottom: 1rem;
+}
+
+.bpp-4 li {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+.bpp-4 a {
+  color: #007bff;
+}
