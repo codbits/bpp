@@ -200,6 +200,25 @@ a:hover, a:focus {
   margin-bottom: 0;
 }
 
+.bpp-credit {
+  display: block;
+  padding: 2rem;
+  background-color: #f3f5f7;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.bpp-credit .bpp-img {
+  max-width: 90px;
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.bpp-credit .bpp-title {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
 .bpp-footer {
   margin-top: 3rem;
   padding: 1.2rem 0;
