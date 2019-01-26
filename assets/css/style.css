@@ -217,13 +217,8 @@ a:hover, a:focus {
   width: 25%;
 }
 
-.bpp-plans {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .bpp-plans .bpp-plan {
+  display: block;
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
