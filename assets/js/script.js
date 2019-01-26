@@ -12,10 +12,11 @@ $(function() {
   // Thanks to https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists
   function waitForElementToDisplay(selector, time) {
     if (document.querySelector(selector) != null) {
+      console.log($(selector))
       $(selector).popover({
         placement: 'bottom',
         html: true,
-        trigger: 'focus'
+        // trigger: 'focus'
       })
       return
     } else {
@@ -25,5 +26,5 @@ $(function() {
     }
   }
 
-	waitForElementToDisplay('[data-toggle="popover"]')
+  waitForElementToDisplay('[data-toggle="popover"]')
 });

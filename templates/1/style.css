@@ -1,0 +1,24 @@
+.bpp-1 {
+  padding: 8rem 0;
+  background-color: #fff;
+}
+
+.bpp-1 .bpp-shapes {
+  width: 3rem;
+  margin-bottom: .5rem;
+}
+
+.bpp-1 .bpp-title {
+  font-size: 2rem;
+}
+
+.bpp-1 .bpp-subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.bpp-1 .bpp-text {
+  font-size: 80%;
+  color: #adb5bd;
+}

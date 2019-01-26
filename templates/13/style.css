@@ -1,0 +1,60 @@
+.bpp-13 {
+  padding: 6rem 0;
+  position: relative;
+  background-color: white;
+}
+
+.bpp-13 .bpp-shape {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #db2d43;
+  border-radius: 20px 120px 0 0;
+  text-align: center;
+}
+
+.bpp-13 .bpp-shape .bpp-title {
+  padding-bottom: 2rem;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #ea8491;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.bpp-13 .bpp-content {
+  position: relative;
+  padding: 6rem 2rem 1rem;
+  margin-left: 120px;
+}
+
+.bpp-13 .bpp-content .bpp-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: -108px;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .bpp-13 .bpp-content .bpp-title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.bpp-13 .bpp-content .bpp-desc {
+  line-height: 1.8;
+}

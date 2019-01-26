@@ -1,0 +1,79 @@
+.bpp-17 {
+  background-color: #fff;
+}
+
+.bpp-17 .bpp-map {
+  height: 70vh;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .bpp-17 .bpp-map {
+    padding-right: 3vmin;
+    padding-left: 3vmin;
+  }
+}
+
+.bpp-17 .bpp-cards {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .bpp-17 .bpp-cards {
+    margin-top: -75px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bpp-17 .bpp-cards {
+    margin-top: -125px;
+  }
+}
+
+.bpp-17 .bpp-card {
+  border-width: 0;
+  color: white;
+}
+
+.bpp-17 .bpp-card .card-img {
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .bpp-17 .bpp-card .card-img {
+    height: 150px;
+  }
+}
+
+.bpp-17 .bpp-card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #000000b0;
+}
+
+.bpp-17 .bpp-subfooter {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bpp-17 .bpp-subfooter .bpp-text {
+    margin-bottom: 0;
+  }
+}
+
+.bpp-17 .bpp-subfooter .nav-link {
+  padding: 0 0 0 1rem;
+}

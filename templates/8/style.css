@@ -1,0 +1,81 @@
+body {
+  background-color: #020202;
+}
+
+.bpp-8 {
+  font-family: 'Roboto', sans-serif;
+  height: 800px;
+  background: #020202 url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.bpp-8 .container {
+  padding-top: 20vh;
+}
+
+.bpp-8 .bpp-divider {
+  margin-bottom: 2rem;
+  height: 2px;
+  width: 100px;
+  background-color: #fb2d2d;
+}
+
+.bpp-8 .bpp-title {
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+
+.bpp-8 .bpp-btn {
+  padding: 0.7rem 2rem;
+  margin-top: 2rem;
+  background-color: #fb2d2d;
+  border: 2px solid #fb2d2d;
+  color: white;
+  font-weight: bold;
+}
+
+.bpp-8 .row:nth-child(2) {
+  margin-top: 20vh;
+}
+
+.bpp-8 .card {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  top: 0;
+  background-color: #1c1c1c;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .bpp-8 .card {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.bpp-8 .card:hover {
+  top: -1rem;
+  background-color: #fb2d2d;
+}
+
+.bpp-8 .card:hover .bpp-icon,
+.bpp-8 .card:hover .card-text {
+  color: white;
+}
+
+.bpp-8 .bpp-icon {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #999999;
+}
+
+.bpp-8 .card-title {
+  font-size: 1.5rem;
+}
+
+.bpp-8 .card-text {
+  color: #999999;
+}
