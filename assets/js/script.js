@@ -9,22 +9,9 @@ $(function() {
 
   masonry.removeClass('bpp-loading');
 
-  // Thanks to https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists
-  function waitForElementToDisplay(selector, time) {
-    if (document.querySelector(selector) != null) {
-      console.log($(selector))
-      $(selector).popover({
-        placement: 'bottom',
-        html: true,
-        // trigger: 'focus'
-      })
-      return
-    } else {
-      setTimeout(function() {
-        waitForElementToDisplay(selector, time)
-      }, time)
-    }
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
   }
 
-  waitForElementToDisplay('[data-toggle="popover"]')
+  console.log(345345)
 });

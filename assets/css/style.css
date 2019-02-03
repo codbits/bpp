@@ -25,6 +25,11 @@ a:hover, a:focus {
   margin-bottom: 2rem;
 }
 
+.bpp-header .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .bpp-header .navbar {
   padding-top: .7rem;
   padding-bottom: .7rem;
@@ -150,29 +155,6 @@ a:hover, a:focus {
   width: 18px;
 }
 
-.popover {
-  margin-top: 15px;
-  border-radius: 0;
-  border-color: #dbdbdc;
-}
-
-.popover-body {
-  padding: 0;
-}
-
-.popover-body .list-unstyled {
-  margin: 0;
-}
-
-.popover-body .list-unstyled li {
-  padding: .8rem;
-  white-space: nowrap;
-}
-
-.popover-body .list-unstyled li:not(:last-child) {
-  border-bottom: 1px solid #f3f5f7;
-}
-
 .bpp-template-tags {
   font-size: .7rem;
   line-height: 1.8;
@@ -215,6 +197,36 @@ a:hover, a:focus {
 
 .size-1of4 {
   width: 25%;
+}
+
+.bpp-template-single-preview {
+  margin-top: -2rem;
+  background-color: #343a40;
+  border-bottom: 1px solid #f3f5f7;
+}
+
+.bpp-template-single-preview .bpp-frame {
+  padding: 0;
+  margin: 0 0 -7px;
+  border: 0;
+  width: 100%;
+  max-height: 70vh;
+  border-top-left-radius: 3vmin;
+  border-top-right-radius: 3vmin;
+}
+
+@media (min-width: 992px) {
+  .bpp-template-single-preview .container {
+    max-width: calc(100% - 64px);
+  }
+}
+
+.bpp-template-single-content {
+  padding-top: 2rem;
+}
+
+.bpp-template-single-content a:not(.btn) {
+  color: #007bff;
 }
 
 .bpp-plans .bpp-plan {
