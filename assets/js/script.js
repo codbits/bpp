@@ -1,3 +1,8 @@
+function bppResizeIframe(iframe) {
+  iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  console.log(iframe.parentNode.classList.remove('bpp-preview-loading'))
+}
+
 $(function() {
   var masonry = $('.bpp-masonry');
 
@@ -8,10 +13,4 @@ $(function() {
   });
 
   masonry.removeClass('bpp-loading');
-
-  function resizeIframe(iframe) {
-    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-  }
-
-  console.log(345345)
 });
